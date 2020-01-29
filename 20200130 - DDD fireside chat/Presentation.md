@@ -31,7 +31,6 @@ footer: DDD Fireside chat - 30th Jan 2020 - @skleanthous
 
 - Savvas Kleanthous
 - Head of Engineering @ ParcelVision Ltd.
-- Experience with DDD \ CQRS \ ES: 6 years
 
 Social:
 - Twitter: @skleanthous
@@ -49,7 +48,9 @@ Some years ago at a DDDx...
 
 ---
 
-# Even if we're not "missing" anything..
+# Even if we're not "missing" anything...
+
+<!-- It's a messy messy world out there -->
 
 <!-- - There are a lot of problems a new team faces when trying to adopt DDD for the first time -->
 
@@ -58,6 +59,7 @@ Some years ago at a DDDx...
 # Things I wish I knew 8 years ago:
 
 ### 1. DDD is actually made up of a lot of principles and **very** few rules.
+
 ### 2. No matter the domain: someone already did most of the difficult parts. _Probably_ by hand.
 
 <!-- Which is just another way of saying: trust the requirements first before anything else -->
@@ -68,7 +70,7 @@ Some years ago at a DDDx...
 
 # Types of problems
 
-To give you some 
+Just some ideas to kick things off
 
 ---
 
@@ -86,10 +88,10 @@ Examples:
 
 Examples:
 
-1. No domain discovery
-1. Wrong boundaries
+1. Little effort in domain discovery
 1. Experts of old systems, not domain
 1. Not enough focus on strategic patterns
+1. Wrong boundaries
 
 ---
 
@@ -99,7 +101,7 @@ Examples:
 
 1. God aggregates
 1. Event source \ CQRS everything
-1. Applying them blindly
+1. Applying tactical patterns blindly
 
 ---
 
@@ -118,10 +120,22 @@ Examples:
 
 # Hints - what to speak / ask about:
 
-- What problem did you face?
-- What did or didn't worked for you?
-- What _should_ have worked but _didn't_?
-- What unconventional thing did you do, which proved valuable?
+|--------------|---|
+| - What problem did you face?  |  | \
+| - What did or didn't worked for you? | - People problems | \
+| - What _should_ have worked but _didn't_? | - Strategic problems | \
+| - What unconventional thing did you do, | - Tactical problems | \
+|   which proved valuable? | |
+
+<!--
+
+Points of discussion in case of stalling
+- Lack of SME in PVA -> solved by relatively aneamic domain model with emphasis on configuration until SME emerges and we start codifying
+- Business causing god aggregates to appear: roger way too insistent on everything needing to be immediately consistent -> solution was to focus on the customer. async CQRS was introduced because it allowed us to be able to decouple processing and scalability of multiple services with vastly different behaviour and expectations (throughput, response times, scalability)
+- During Event Storming, the aggregate\BC boundaries were not clear -> pivot events, common terms in events with stickies being far apart (remember lack of SME's), re-use of projection by business logic resulted in aggregate boundaries.
+- Lack of trust in messaging, and eventual consistency caused too much reliance on end-to-end tests, which grew significantly, causing testing times to soar
+
+-->
 
 ---
 
