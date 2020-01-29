@@ -143,12 +143,14 @@ Points of discussion in case of stalling
 
 # Feedback
 
----
+![QR Code for feedback form](./FeedbackQR.png)
+Form link: https://forms.gle/6ssVf8VecsHhAjVP9
 
-# Feedback
-
+<!--
 1. How did you find this format?
+1. Did you enjoy this talk?
 1. Did you learn anything?
+-->
 
 ---
 
