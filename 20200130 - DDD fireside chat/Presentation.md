@@ -44,7 +44,12 @@ Social:
 Some years ago at a DDDx...
 
 <!-- "Are we missing something from DDD" -->
-<!-- Question was about tactical: needed to load a collection of VO's from a repo -->
+<!-- 
+Question was about tactical: needed to load a collection of VO's from a repo 
+
+This is about OUR domain: as DDD practitioners! Approach DDD as a domain we should learn collaboratively: on our day-to-day we advocate speaking to our SME's and collaboratively learning about our domain. This talk is about doing just that, in a "meta" way: speak about what worked for us, to learn about the domain of applying DDD
+
+-->
 
 ---
 
