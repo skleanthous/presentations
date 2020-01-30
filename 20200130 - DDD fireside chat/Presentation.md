@@ -148,6 +148,7 @@ Points of discussion in case of stalling
 
 ![QR Code for feedback form](./FeedbackQR.png)
 Form link: https://forms.gle/6ssVf8VecsHhAjVP9
+Presentation link: https://skleanthous.github.io/presentations/
 
 <!--
 1. How did you find this format?
