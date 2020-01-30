@@ -130,9 +130,12 @@ Examples:
 <!--
 
 Points of discussion in case of stalling
-- Lack of SME in PVA -> solved by relatively aneamic domain model with emphasis on configuration until SME emerges and we start codifying
-- Business causing god aggregates to appear: roger way too insistent on everything needing to be immediately consistent -> solution was to focus on the customer. async CQRS was introduced because it allowed us to be able to decouple processing and scalability of multiple services with vastly different behaviour and expectations (throughput, response times, scalability)
+- Lack of SME in PVA -> solved by focusing on boundaries to encapsulate complexity, making the aggregate as small as it could be, and having relatively aneamic domain models with PM's which use admin configuration to make decisions, pushing the decisions in. 
+
+- Business causing god aggregates to appear: Business way too insistent on everything needing to be immediately consistent -> solution was to focus on the customer. async CQRS was introduced because it allowed us to be able to decouple processing and scalability of multiple services with vastly different behaviour and expectations (throughput, response times, scalability)
+
 - During Event Storming, the aggregate\BC boundaries were not clear -> pivot events, common terms in events with stickies being far apart (remember lack of SME's), re-use of projection by business logic resulted in aggregate boundaries.
+
 - Lack of trust in messaging, and eventual consistency caused too much reliance on end-to-end tests, which grew significantly, causing testing times to soar
 
 -->
