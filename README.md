@@ -15,9 +15,10 @@ Alternatively, from the CLI just run `npx @marp-team/marp-cli {NameOfPresentatio
 1. Make sure you have markdown-it engine installed locally by running `npm install markdown-it --save-dev`
 1. Make sure you have plugin installed locally by running `npm install {Plugin Name} --save-dev`
 1. Add the plugin in [engine.js](engine.js) as per it's instructions and similar to the existing examples already in engine.js
-1. When building the presentation, you'd have to use `marp-cli` and provide an engine by running `npx @marp-team/marp-cli --engine {Path to engine} {Path to presentation}`. For example if you're in the [DDD Fireside chat folder](./20200130%20-%20DDD%20fireside%20chat/), you can run:
+1. When building the presentation, you'd have to use `marp-cli` and provide an engine by running `npx @marp-team/marp-cli --engine {Path to engine} {Path to presentation}`. For example if you're in the [DDD Fireside chat folder](./20200130-DDD-fireside-chat/), you can run:
    - `npx @marp-team/marp-cli --engine ../engine.js Presentation.md`
 
 ## Presentations
 
-- DDD London 30th Jan 2020: [DDD Fireside chat: what worked, what didn't, and what we did about it!](./20200130%20-%20DDD%20fireside%20chat/Presentation.html)
+- DDD London 30th Jan 2020: [DDD Fireside chat: what worked, what didn't, and what we did about it!](./20200130-DDD-fireside-chat/presentation.html)
+- DDD London 28th May 2020: [An intro to arc42](./20200528-DDD-fireside-chat/presentation.html)

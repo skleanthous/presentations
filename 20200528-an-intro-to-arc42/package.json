@@ -1,0 +1,19 @@
+{
+  "name": "20200528-an-intro-to-arc42",
+  "version": "1.0.0",
+  "description": "An introduction to arc42",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp serve"
+  },
+  "author": "Savvas Kleanthous",
+  "license": "ISC",
+  "dependencies": {
+    "gulp-connect": "^5.7.0",
+    "reveal.js": "^4.0.0",
+    "yargs": "^15.3.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}

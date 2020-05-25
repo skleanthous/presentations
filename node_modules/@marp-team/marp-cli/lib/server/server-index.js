@@ -1,0 +1,1 @@
+!function(){"use strict";!function(){const e=document.getElementById("show-all"),t=document.getElementById("index"),s=s=>{e.checked=s,t.classList.toggle("show-all",s);try{sessionStorage.setItem("marp-cli-show-all",s?"1":"")}catch(e){console.error(e)}};s(!!sessionStorage.getItem("marp-cli-show-all")),e.addEventListener("change",()=>s(e.checked))}()}();
