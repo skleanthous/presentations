@@ -43,6 +43,15 @@ footer: An introduction to arc42 - @skleanthous
 
 <!-- _header: "What is arc42?" -->
 
+## Should I use it?
+
+- It provides structure to documentation
+- It helps cover important parts
+
+---
+
+<!-- _header: "What is arc42?" -->
+
 ## Why I liked it
 
 - Accessible
@@ -127,7 +136,6 @@ Do's and dont's
 - An overview of the ecosystem
 - Specify communication & dependencies
 - Focus on _public_ interfaces and data flow
-- Use C4 system context diagrams
 
 <!--
 
@@ -146,7 +154,7 @@ Do's and dont's
 
 <!-- _header: "Sections in arc42"-->
 
-## Section 3: Context and scope
+## Section 3: Context and scope (cont.)
 
 In business context add:
 - C4 system context diagrams
@@ -193,13 +201,15 @@ In business context add:
 - Absolutely use diagrams!
 - Use tables to describe black boxes which you don't zoom into
 - Use some text to explain purpose
+
+BEFORE I MOVE TO NEXT SLIDE: This is 
 -->
 
 ---
 
 <!-- _header: "Sections in arc42"-->
 
-## Section 5: building block view
+## Section 5: building block view (cont.)
 
 <img src="https://docs.arc42.org/images/05-building-block-hierarchy.png" height="480" alt="Fred Brooks picture" align="bottom" />   <font size="4">Sample taken from https://docs.arc42.org/section-5/</font>
 
@@ -212,6 +222,21 @@ In business context add:
 - Absolutely use diagrams!
 - Use tables to describe black boxes which you don't zoom into
 - Use some text to explain purpose
+-->
+
+---
+
+## Section 5: Building block view (cont.)
+#### Buidling block view and DDD
+
+- Clearly mark Bounded Contexts
+- Consider Bounded Context Canvas
+- Consider Aggregate Design Canvas
+
+<!--
+- Clearly define bounded context. Better yet align your diagrams with your bounded contexts
+- Bounded context canvas will be replacing the text describing the blackboxes at different levels. Maybe do this?
+- Aggregate design canvas maybe a reasonable addition for a level 3 (a zoom on components to show code)
 -->
 
 ---
@@ -366,14 +391,26 @@ Side-track: Cross-cutting concerns are important in a system:
 
 ## arc42 with DDD
 
-- Fits together quite nicely
-- Fill-in a gap
+- Eniterely orthogonal
+- arc42 doesn't cater for DDD-specific expectations
+- Add to documentation where needed
+
+<!--
+- There are things which are useful in DDD, which arc42 does not specifically cater for
+- Regardless they are orthogonal concerns and can be used together nicely
+- I already made some suggestions for extending to include artifacts one expects from analysis using DDD
+-->
 
 ---
 
 <!-- _header: "arc42 in context"-->
 
-## arc42 in startups
+## arc42 in startups / small orgs
+
+- Yes, but keep it lean
+- Collaborative ownership
+- Make it lean
+- Still focus on 1-3
 
 ---
 
@@ -381,5 +418,13 @@ Side-track: Cross-cutting concerns are important in a system:
 
 ## arc42 without an architect
 
+- Do it
+- Collaborative ownership again
+
 ---
 
+<!-- _class: lead invert -->
+# Thank you
+
+Savvas Kleanthous
+@skleanthous
