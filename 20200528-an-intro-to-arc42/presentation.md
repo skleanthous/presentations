@@ -110,12 +110,11 @@ Things that restrict freedom of architectural decisions. These may be:
 - Environmental
 - Political and / or organizational
 - Technical
-- Skillset or experience related / external
 
 <!-- 
 
 - External constraints refers to ability to hire talent, maturity of constrained tooling, anything impacting scale, etc
-- Skillset refers to knowledge of existing teams with current platform. Usually this refers to infra teams ability to support a new db in production OR experience of dev team with new approach
+- Technical includes existing or available skillset, which refers to knowledge of existing teams with current platform. Usually this refers to infra teams ability to support a new db in production OR experience of dev team with new approach
 
 
 Do's and dont's
@@ -156,10 +155,18 @@ Do's and dont's
 
 ## Section 3: Context and scope (cont.)
 
-In business context add:
+Use / add / link to:
+
 - C4 system context diagrams
 - Business model canvas
-- User story map
+- Additional modeling artifacts
+
+<!--
+Since this section is about context and understanding how it's used, add following (if they exist) to provide context:
+- User story mapping
+- Use Example mapping diagrams
+- Use Domain story-telling
+-->
 
 ---
 
@@ -190,7 +197,7 @@ In business context add:
 - Start from system view
 - Zoom to show services --> Level 1
 - Zoom to show components --> Level 2
-- Diagrams + text
+- (C4 container and component) Diagrams + text
 
 <!--
 - I won't describe _how_ to create the architecture (DDD_London has a lot of good talks on the subject), only explain what goes in here:
@@ -247,17 +254,17 @@ BEFORE I MOVE TO NEXT SLIDE: This is
 
 - Focuses on the dynamic aspects
 - Document:
-    + Use cases
-    + Workflows
-    + Interactions \ data flows
-    + Sad paths
+  - Use cases
+  - Workflows
+  - Interactions \ data flows
+  - Sad paths
 - Add links or pictures from any Event storming sessions here
 
 <!--
 
-- Use User story maping
-- Use Example mapping diagrams
-- Use Domain story-telling
+- Dynamic diagrams in the sense of UML dynamic diagrams:
+  - Sequence diagrams
+  - Activity diagrams
 
 - Don't try to be thorough! Focus on the important ones. It can be a huge productivity drain to maintain. 
 - Diagrams! Diagrams!
@@ -311,6 +318,10 @@ Side-track: Cross-cutting concerns are important in a system:
 > I will contend that Conceptual Integrity is the most important consideration in system design. It is better to have a system omit certain anomalous features and improvements, but to reflect one set of design ideas, than to have one that contains many good but independent and uncoordinated ideas.
 
 <img src="http://www.cs.unc.edu/~brooks/Brookspic2.jpg" alt="Fred Brooks picture" align="center" /> Fred Brooks (1975)
+
+<!--
+- Don't do unexpected things!
+-->
 
 ---
 

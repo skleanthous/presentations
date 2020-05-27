@@ -99,7 +99,6 @@
 <li>Environmental</li>
 <li>Political and / or organizational</li>
 <li>Technical</li>
-<li>Skillset or experience related / external</li>
 </ul>
 <footer>An introduction to arc42 - @skleanthous</footer>
 </section>
@@ -118,11 +117,11 @@
 <header>Sections in arc42</header>
 
 <h2>Section 3: Context and scope (cont.)</h2>
-<p>In business context add:</p>
+<p>Use / add / link to:</p>
 <ul>
 <li>C4 system context diagrams</li>
 <li>Business model canvas</li>
-<li>User story map</li>
+<li>Additional modeling artifacts</li>
 </ul>
 <footer>An introduction to arc42 - @skleanthous</footer>
 </section>
@@ -146,7 +145,7 @@
 <li>Start from system view</li>
 <li>Zoom to show services --&gt; Level 1</li>
 <li>Zoom to show components --&gt; Level 2</li>
-<li>Diagrams + text</li>
+<li>(C4 container and component) Diagrams + text</li>
 </ul>
 <footer>An introduction to arc42 - @skleanthous</footer>
 </section>
@@ -317,7 +316,7 @@
 - Use diagrams to succintly describe and and give context
 - Examples are easy to understand
 - Also examples \ scenarios can very clearly convey quality requirements</p></div><div class="bespoke-marp-note" data-index="8" tabindex="0"><p>- External constraints refers to ability to hire talent, maturity of constrained tooling, anything impacting scale, etc
-- Skillset refers to knowledge of existing teams with current platform. Usually this refers to infra teams ability to support a new db in production OR experience of dev team with new approach
+- Technical includes existing or available skillset, which refers to knowledge of existing teams with current platform. Usually this refers to infra teams ability to support a new db in production OR experience of dev team with new approach
 
 
 Do's and dont's
@@ -333,7 +332,10 @@ Do's and dont's
 - Focus on public interfaces
 - _Maybe_ in complex systems instead of a single box, put your DDD domains and/or BC's
 - Avoid too much detail -&gt; This is an overview
-- Show data flow</p></div><div class="bespoke-marp-note" data-index="11" tabindex="0"><p>- All important decisions MUST be documented here - none missing
+- Show data flow</p></div><div class="bespoke-marp-note" data-index="10" tabindex="0"><p>Since this section is about context and understanding how it's used, add following (if they exist) to provide context:
+- User story mapping
+- Use Example mapping diagrams
+- Use Domain story-telling</p></div><div class="bespoke-marp-note" data-index="11" tabindex="0"><p>- All important decisions MUST be documented here - none missing
 - Analysis, design, hosting, (internal and external) integration, data, all should be reflected if possible and make sense
 - Link to next sections
 - Don't get carried away. This is not an ADR list -&gt; that's section 9 :)</p></div><div class="bespoke-marp-note" data-index="12" tabindex="0"><p>- I won't describe _how_ to create the architecture (DDD_London has a lot of good talks on the subject), only explain what goes in here:
@@ -354,9 +356,9 @@ BEFORE I MOVE TO NEXT SLIDE: This is</p></div><div class="bespoke-marp-note" dat
 - Use tables to describe black boxes which you don't zoom into
 - Use some text to explain purpose</p></div><div class="bespoke-marp-note" data-index="14" tabindex="0"><p>- Clearly define bounded context. Better yet align your diagrams with your bounded contexts
 - Bounded context canvas will be replacing the text describing the blackboxes at different levels. Maybe do this?
-- Aggregate design canvas maybe a reasonable addition for a level 3 (a zoom on components to show code)</p></div><div class="bespoke-marp-note" data-index="15" tabindex="0"><p>- Use User story maping
-- Use Example mapping diagrams
-- Use Domain story-telling
+- Aggregate design canvas maybe a reasonable addition for a level 3 (a zoom on components to show code)</p></div><div class="bespoke-marp-note" data-index="15" tabindex="0"><p>- Dynamic diagrams in the sense of UML dynamic diagrams:
+  - Sequence diagrams
+  - Activity diagrams
 
 - Don't try to be thorough! Focus on the important ones. It can be a huge productivity drain to maintain. 
 - Diagrams! Diagrams!
@@ -369,7 +371,7 @@ BEFORE I MOVE TO NEXT SLIDE: This is</p></div><div class="bespoke-marp-note" dat
     + Tech decisions
     + Event sourcing approach
 - Only the important ones
-- Personal advice: while you could document data model in this section, definitely prefer to model stati view of your system through section 5 (building blocs view), and dynamic view through section 6 (runtime view)</p></div><div class="bespoke-marp-note" data-index="19" tabindex="0"><p>- This is a section to document your _important_ ADR's
+- Personal advice: while you could document data model in this section, definitely prefer to model stati view of your system through section 5 (building blocs view), and dynamic view through section 6 (runtime view)</p></div><div class="bespoke-marp-note" data-index="18" tabindex="0"><p>- Don't do unexpected things!</p></div><div class="bespoke-marp-note" data-index="19" tabindex="0"><p>- This is a section to document your _important_ ADR's
 - If you can document the decision near the effect it has on the different sections, prefer to do so. Cause and effect make sense together.
 - Only exception: the important \ expensive bits. You will probably want to go deeper into some decisions and this breaks the benefit of having cause-effect in the different architectural views.
 - Things to write:
