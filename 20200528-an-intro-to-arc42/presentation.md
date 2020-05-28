@@ -28,7 +28,7 @@ footer: An introduction to arc42 - @skleanthous
 
 ---
 
-<!-- _header: "What is arc42?" -->
+<!-- _header: "What is arc42? 1 of 8" -->
 
 ## arc42...
 
@@ -43,14 +43,14 @@ footer: An introduction to arc42 - @skleanthous
 -->
 ---
 
-<!-- _header: "What is arc42?" -->
+<!-- _header: "What is arc42? 2 of 8" -->
 <!-- _class: lead invert -->
 
 ## Should I use it?
 
 ---
 
-<!-- _header: "What is arc42?" -->
+<!-- _header: "What is arc42? 3 of 8" -->
 
 ## My most common experience with documentation:
 
@@ -58,7 +58,7 @@ footer: An introduction to arc42 - @skleanthous
 
 ---
 
-<!-- _header: "What is arc42?" -->
+<!-- _header: "What is arc42? 4 of 8" -->
 
 ## My experience with DDD documentation:
 
@@ -66,7 +66,7 @@ footer: An introduction to arc42 - @skleanthous
 
 ---
 
-<!-- _header: "What is arc42?" -->
+<!-- _header: "What is arc42? 5 of 8" -->
 
 ## My experience with formal documentation (what little I got to see):
 
@@ -74,7 +74,7 @@ footer: An introduction to arc42 - @skleanthous
 
 ---
 
-<!-- _header: "What is arc42?" -->
+<!-- _header: "What is arc42? 6 of 8" -->
 
 ## My experience with formal documentation:
 
@@ -82,7 +82,7 @@ footer: An introduction to arc42 - @skleanthous
 
 ---
 
-<!-- _header: "What is arc42?" -->
+<!-- _header: "What is arc42? 7 of 8" -->
 
 ## (not really) side-tracking:
 
@@ -90,13 +90,14 @@ footer: An introduction to arc42 - @skleanthous
 
 ---
 
-<!-- _header: "What is arc42?" -->
+<!-- _header: "What is arc42? 8 of 8" -->
 
 ## We can and should do better than that
 
 - Accessible
 - Low ceremony
-- Both lean and thorough
+- Thorough
+- Extensible
 
 <!--
 - As much or as little as it makes sense
@@ -111,7 +112,7 @@ footer: An introduction to arc42 - @skleanthous
 
 ---
 
-<!-- _header: "Sections in arc42"-->
+<!-- _header: "Sections in arc42. 1 of 16"-->
 
 ## Section 1: Introduction and goals
 
@@ -141,7 +142,7 @@ It is a high (but invaluable) overview of the project. Made up of:
 
 ---
 
-<!-- _header: "Sections in arc42"-->
+<!-- _header: "Sections in arc42. 2 of 16"-->
 
 ## Section 2: Architecture constraints
 
@@ -168,7 +169,7 @@ Do's and dont's
 
 ---
 
-<!-- _header: "Sections in arc42"-->
+<!-- _header: "Sections in arc42. 3 of 16"-->
 
 ## Section 3: Context and scope
 
@@ -191,7 +192,7 @@ Do's and dont's
 
 ---
 
-<!-- _header: "Sections in arc42"-->
+<!-- _header: "Sections in arc42. 4 of 16"-->
 
 ## Section 3: Context and scope (cont.)
 
@@ -210,7 +211,7 @@ Since this section is about context and understanding how it's used, add followi
 
 ---
 
-<!-- _header: "Sections in arc42"-->
+<!-- _header: "Sections in arc42. 5 of 16"-->
 
 ## Section 4: Solution strategy
 
@@ -229,7 +230,7 @@ Since this section is about context and understanding how it's used, add followi
 
 ---
 
-<!-- _header: "Sections in arc42"-->
+<!-- _header: "Sections in arc42. 6 of 16"-->
 
 ## Section 5: Building block view
 
@@ -254,7 +255,7 @@ BEFORE I MOVE TO NEXT SLIDE: This is
 
 ---
 
-<!-- _header: "Sections in arc42"-->
+<!-- _header: "Sections in arc42. 7 of 16"-->
 
 ## Section 5: building block view (cont.)
 
@@ -274,6 +275,8 @@ BEFORE I MOVE TO NEXT SLIDE: This is
 
 ---
 
+<!-- _header: "Sections in arc42. 8 of 16"-->
+
 ## Section 5: Building block view (cont.)
 #### Buidling block view and DDD
 
@@ -289,7 +292,7 @@ BEFORE I MOVE TO NEXT SLIDE: This is
 
 ---
 
-<!-- _header: "Sections in arc42"-->
+<!-- _header: "Sections in arc42. 9 of 16"-->
 
 ## Section 6: Runtime view
 
@@ -315,7 +318,7 @@ BEFORE I MOVE TO NEXT SLIDE: This is
 
 ---
 
-<!-- _header: "Sections in arc42"-->
+<!-- _header: "Sections in arc42. 10 of 16"-->
 
 ## Section 7: Deployment view
 
@@ -331,7 +334,7 @@ BEFORE I MOVE TO NEXT SLIDE: This is
 
 ---
 
-<!-- _header: "Sections in arc42"-->
+<!-- _header: "Sections in arc42. 11 of 16"-->
 
 ## Section 8: Concepts
 > #### The pattern language of your solution
@@ -354,6 +357,8 @@ BEFORE I MOVE TO NEXT SLIDE: This is
 
 ---
 
+<!-- _header: "Sections in arc42. 12 of 16"-->
+
 Side-track: Cross-cutting concerns are important in a system:
 
 > I will contend that Conceptual Integrity is the most important consideration in system design. It is better to have a system omit certain anomalous features and improvements, but to reflect one set of design ideas, than to have one that contains many good but independent and uncoordinated ideas.
@@ -366,7 +371,7 @@ Side-track: Cross-cutting concerns are important in a system:
 
 ---
 
-<!-- _header: "Sections in arc42"-->
+<!-- _header: "Sections in arc42. 13 of 16"-->
 
 ## Section 9: Architecture decisions
 
@@ -388,7 +393,7 @@ Side-track: Cross-cutting concerns are important in a system:
 
 ---
 
-<!-- _header: "Sections in arc42"-->
+<!-- _header: "Sections in arc42. 14 of 16"-->
 
 ## Section 10: Quality
 
@@ -406,7 +411,7 @@ Side-track: Cross-cutting concerns are important in a system:
 
 ---
 
-<!-- _header: "Sections in arc42"-->
+<!-- _header: "Sections in arc42. 15 of 16"-->
 
 ## Section 11: Risk and technical debt
 
@@ -418,7 +423,7 @@ Side-track: Cross-cutting concerns are important in a system:
 
 ---
 
-<!-- _header: "Sections in arc42"-->
+<!-- _header: "Sections in arc42. 16 of 16"-->
 
 ## Section 12: Glossary
 
@@ -439,12 +444,12 @@ Side-track: Cross-cutting concerns are important in a system:
 
 ---
 
-<!-- _header: "arc42 in context"-->
+<!-- _header: "arc42 in context. 1 of 3"-->
 
 ## arc42 with DDD
 
 - Eniterely orthogonal
-- arc42 doesn't cater for DDD-specific expectations
+- arc42 doesn't cater for DDD-specific expectations _by default_
 - Add to documentation where needed
 
 <!--
@@ -455,18 +460,18 @@ Side-track: Cross-cutting concerns are important in a system:
 
 ---
 
-<!-- _header: "arc42 in context"-->
+<!-- _header: "arc42 in context. 2 of 3"-->
 
 ## arc42 in startups / small orgs
 
-- Yes, but keep it lean
+- Yes, within reason
 - Collaborative ownership
 - Make it lean
 - Still focus on 1-3
 
 ---
 
-<!-- _header: "arc42 in context"-->
+<!-- _header: "arc42 in context. 3 of 3"-->
 
 ## arc42 without an architect
 
