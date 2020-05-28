@@ -358,7 +358,7 @@ Side-track: Cross-cutting concerns are important in a system:
 
 > I will contend that Conceptual Integrity is the most important consideration in system design. It is better to have a system omit certain anomalous features and improvements, but to reflect one set of design ideas, than to have one that contains many good but independent and uncoordinated ideas.
 
-<p style="text-align:right;"><img src="http://www.cs.unc.edu/~brooks/Brookspic2.jpg" alt="Fred Brooks picture"/>Fred Brooks (1975)</p>
+<p style="text-align:right;"><img src="http://www.cs.unc.edu/~brooks/Brookspic2.jpg" height="160" alt="Fred Brooks picture"/><br>Fred Brooks</p>
 
 <!--
 - Don't do unexpected things!
