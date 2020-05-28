@@ -367,6 +367,8 @@ Side-track: Cross-cutting concerns are important in a system:
 
 <!--
 - Don't do unexpected things!
+- Don't run the risk of moving to another part of the system, and brake stuff due to muscle memory
+- Productivity across code that adheres to the conceptual integrity
 -->
 
 ---

@@ -391,7 +391,9 @@ BEFORE I MOVE TO NEXT SLIDE: This is</p></div><div class="bespoke-marp-note" dat
     + Tech decisions
     + Event sourcing approach
 - Only the important ones
-- Personal advice: while you could document data model in this section, definitely prefer to model stati view of your system through section 5 (building blocs view), and dynamic view through section 6 (runtime view)</p></div><div class="bespoke-marp-note" data-index="23" tabindex="0"><p>- Don't do unexpected things!</p></div><div class="bespoke-marp-note" data-index="24" tabindex="0"><p>- This is a section to document your _important_ ADR's
+- Personal advice: while you could document data model in this section, definitely prefer to model stati view of your system through section 5 (building blocs view), and dynamic view through section 6 (runtime view)</p></div><div class="bespoke-marp-note" data-index="23" tabindex="0"><p>- Don't do unexpected things!
+- Don't run the risk of moving to another part of the system, and brake stuff due to muscle memory
+- Productivity across code that adheres to the conceptual integrity</p></div><div class="bespoke-marp-note" data-index="24" tabindex="0"><p>- This is a section to document your _important_ ADR's
 - If you can document the decision near the effect it has on the different sections, prefer to do so. Cause and effect make sense together.
 - Only exception: the important \ expensive bits. You will probably want to go deeper into some decisions and this breaks the benefit of having cause-effect in the different architectural views.
 - Things to write:
