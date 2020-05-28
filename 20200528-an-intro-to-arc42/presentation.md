@@ -60,7 +60,7 @@ footer: An introduction to arc42 - @skleanthous
 
 <!-- _header: "What is arc42? 4 of 8" -->
 
-## My experience with DDD documentation:
+## My experience with documentation in startups:
 
 <p style="text-align:center;"><img src="./resources/stickies.jpg" height="400" alt=""/></p>
 
