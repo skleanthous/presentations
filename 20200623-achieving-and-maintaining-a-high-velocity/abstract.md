@@ -4,7 +4,7 @@ Low lead times (the time taken from recognising a need for a feature or fix unti
 
 However, why do we care about these metrics (are they really needed to be a highly performant organization?), and how do you go about achieving and (perhaps more importantly) maintaining low lead times and a high deployment frequency?
 
-In this talk I'll be presenting some of the key aspects of a baseline of a development framework which can help you on your way towards becoming a high-performence organization. I'll cover three key aspects, one for each of:
+In this talk I'll be presenting some of the key aspects of a baseline of a development framework which can help you on your way towards becoming a high-performance organization. I'll cover three key aspects, one for each of:
 
 - Process: how requirements should come into a team
 - People: how to structure teams around processes, and why

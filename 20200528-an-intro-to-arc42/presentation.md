@@ -10,7 +10,6 @@ footer: An introduction to arc42 - @skleanthous
 
 <!-- _class: lead invert -->
 
-
 # An introduction to arc42
 
 ---
@@ -33,33 +32,74 @@ footer: An introduction to arc42 - @skleanthous
 
 ## arc42...
 
+...is an accessible,  template for authoring architectural documentation
+
+<!--
 | Is | Is _not_ |
 |---|---|
-| A template for architectural documetnation | An architecture |
+| A template for architectural documentation | An architecture |
 | Easy to read / accessible | A modelling tool |
 | A "pit of success" | A silver bullet for documentation |
-
+-->
 ---
 
 <!-- _header: "What is arc42?" -->
+<!-- _class: lead invert -->
 
 ## Should I use it?
 
-- It provides structure to documentation
-- It helps cover important parts
+---
+
+<!-- _header: "What is arc42?" -->
+
+## My most common experience with documentation:
+
+<p style="text-align:center;"><img src="./resources/empty-box.jpg" height="400" alt=""/></p>
 
 ---
 
 <!-- _header: "What is arc42?" -->
 
-## Why I liked it
+## My experience with DDD documentation:
+
+<p style="text-align:center;"><img src="./resources/stickies.jpg" height="400" alt=""/></p>
+
+---
+
+<!-- _header: "What is arc42?" -->
+
+## My experience with formal documentation (what little I got to see):
+
+<p style="text-align:center;"> <img src="./resources/single-puzzle-piece.jpeg" height="400" alt=""/></p>
+
+---
+
+<!-- _header: "What is arc42?" -->
+
+## My experience with formal documentation:
+
+<p style="text-align:center;"><img src="https://i.imgflip.com/432d64.jpg" alt="when documentation finally makes sense"/></p>
+
+---
+
+<!-- _header: "What is arc42?" -->
+
+## (not really) side-tracking:
+
+<p style="text-align:center;"><img src="./resources/grady-booch-wisper.jpg" height="240" alt=""/></p>
+
+---
+
+<!-- _header: "What is arc42?" -->
+
+## We can and should do better than that
 
 - Accessible
 - Low ceremony
-- Good sequence of information
-- Thorough but meant to be used simply and within context
+- Both lean and thorough
 
 <!--
+- As much or as little as it makes sense
 - Easy to use
 - Meant to be adapted to current context
 -->
@@ -218,7 +258,8 @@ BEFORE I MOVE TO NEXT SLIDE: This is
 
 ## Section 5: building block view (cont.)
 
-<img src="https://docs.arc42.org/images/05-building-block-hierarchy.png" height="480" alt="Fred Brooks picture" align="bottom" />   <font size="4">Sample taken from https://docs.arc42.org/section-5/</font>
+<p style="text-align:center;"><img src="https://docs.arc42.org/images/05-building-block-hierarchy.png" height="400" alt="Fred Brooks picture" align="bottom" /></p>
+<font size="4">Sample taken from https://docs.arc42.org/section-5/</font>
 
 <!--
 - I won't describe _how_ to create the architecture (DDD_London has a lot of good talks on the subject), only explain what goes in here:
@@ -317,7 +358,7 @@ Side-track: Cross-cutting concerns are important in a system:
 
 > I will contend that Conceptual Integrity is the most important consideration in system design. It is better to have a system omit certain anomalous features and improvements, but to reflect one set of design ideas, than to have one that contains many good but independent and uncoordinated ideas.
 
-<img src="http://www.cs.unc.edu/~brooks/Brookspic2.jpg" alt="Fred Brooks picture" align="center" /> Fred Brooks (1975)
+<p style="text-align:right;"><img src="http://www.cs.unc.edu/~brooks/Brookspic2.jpg" alt="Fred Brooks picture"/>Fred Brooks (1975)</p>
 
 <!--
 - Don't do unexpected things!
