@@ -15,20 +15,12 @@ ARG USER_GID=$USER_UID
 RUN apt-get update \
     && apt-get -y install --no-install-recommends apt-utils dialog 2>&1 \
     #
-    # [Optional] Add sudo support
-    && apt-get install -y sudo \
-    && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
-    && chmod 0440 /etc/sudoers.d/$USERNAME \
-    #
     # Verify git, process tools, lsb-release (common in install instructions for CLIs) installed
     && apt-get -y install git openssh-client less iproute2 procps lsb-release \
+    # install latest jdk
     && apt-get install -y default-jdk \
     && apt-get install -y graphviz \
     && apt-get install -y plantuml \
-    #
-    && curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash - \
-    && apt-get install -y nodejs \
-    && apt-get install -y build-essential \
     #
     # Build Go tools w/module support
     && mkdir -p /tmp/gotools \
@@ -73,6 +65,15 @@ RUN apt-get update \
     # Create a non-root user to use if preferred - see https://aka.ms/vscode-remote/containers/non-root-user.
     && groupadd --gid $USER_GID $USERNAME \
     && useradd -s /bin/bash --uid $USER_UID --gid $USER_GID -m $USERNAME \
+    # [Optional] Add sudo support
+    && apt-get install -y sudo \
+    && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
+    && chmod 0440 /etc/sudoers.d/$USERNAME \
+    #
+    # Install node
+    && curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash - \
+    && apt-get install -y nodejs \
+    && apt-get install -y build-essential \
     #
     # Clean up
     && apt-get autoremove -y \
