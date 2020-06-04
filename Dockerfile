@@ -21,9 +21,9 @@ RUN apt-get update \
     && apt-get install -y graphviz \
     && apt-get install -y plantuml \
     #
-    curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash - \
-    apt-get install -y nodejs \
-    apt-get install -y build-essential \
+    && curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash - \
+    && apt-get install -y nodejs \
+    && apt-get install -y build-essential \
     #
     # Build Go tools w/module support
     && mkdir -p /tmp/gotools \
