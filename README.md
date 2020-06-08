@@ -1,5 +1,13 @@
 # My presentations
 
+## Presentations
+
+[Presentations page](https://skleanthous.github.io/presentations/)
+
+- DDD London 30th Jan 2020: [DDD Fireside chat: what worked, what didn't, and what we did about it!](https://skleanthous.github.io/presentations/20200130-ddd-fireside-chat/Presentation.html)
+- DDD London 28th May 2020: [An intro to arc42](https://skleanthous.github.io/presentations/20200528-an-intro-to-arc42/presentation.html)
+- UXDX Amsterdam 23rd June 2020: [Becoming (and staying) a high-performance organization](https://skleanthous.github.io/presentations/20200623-becoming-a-high-perf-org/presentation.html)
+
 ## How to build them
 
 The presentations were built using [Marp](https://marp.app/) and using Visual Studio Code with the [Marp plugin installed](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode).
@@ -18,8 +26,3 @@ Alternatively, from the CLI just run `npx @marp-team/marp-cli {NameOfPresentatio
 1. When building the presentation, you'd have to use `marp-cli` and provide an engine by running `npx @marp-team/marp-cli --engine {Path to engine} {Path to presentation}`. For example if you're in the [DDD Fireside chat folder](./20200130-DDD-fireside-chat/), you can run:
    - `npx @marp-team/marp-cli --engine ../engine.js Presentation.md`
 
-## Presentations
-
-- DDD London 30th Jan 2020: [DDD Fireside chat: what worked, what didn't, and what we did about it!](./20200130-ddd-fireside-chat/Presentation.html)
-- DDD London 28th May 2020: [An intro to arc42](./20200528-an-intro-to-arc42/presentation.html)
-- UXDX Amsterdam 23rd June 2020: [Becoming (and staying) a high-performance organization](20200623-becoming-a-high-perf-org/presentation.html)
