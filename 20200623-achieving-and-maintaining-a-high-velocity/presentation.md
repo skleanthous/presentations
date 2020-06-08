@@ -5,22 +5,22 @@ theme: gaia
 paginate: true
 _paginate: false
 _footer: ""
-footer: Becoming a high performance team - @skleanthous
+footer: Becoming a high performance organization - @skleanthous
 ---
 
 <!-- _class: lead invert -->
 
-# Becoming a high-performance team
+# Becoming a high-performance organization
 ## (and how to stay one)
 
 ---
 
 ## Schedule
 
-1. Definition of high-performance - 5mins
-1. Process - 5mins
+1. Definition of high-performance - 2mins
+1. Process - 7mins
+1. People - 3 mins
 1. Architecture - 5mins
-1. Team structure - 5 mins
 1. Q & A - 10mins
 
 ---
@@ -31,24 +31,23 @@ footer: Becoming a high performance team - @skleanthous
 
 ---
 
+<!-- _class: lead -->
 <!-- header: "Definition of high performance"-->
-# A high-performance organization has:
+# A high-performance organization
 
-- Small lead times
-- Low waste
-- Very low change failure rates
-- A meaningful definition of value (hint: it's not always money or customer satisfaction)
+↕
 
----
+> An organization which relentlesly delivers value to it's customers
 
-<!-- header: "Definition of high performance"-->
-# A high-performance organization has:
+<!-- 
 
-- <mark>**Small lead times**</mark>  (👈 needs quick deployments)
-- Low waste
-- Very low change failure rates
-- A meaningful definition of value (hint: it's not always money or customer satisfaction)
+• Small lead times
+• Low waste
+• Very low change failure rates
+• A meaningful definition of value
 
+• Two of the four key metrics: correlation and causation
+-->
 ---
 
 <!-- header: ""-->
@@ -58,98 +57,37 @@ footer: Becoming a high performance team - @skleanthous
 ---
 
 <!-- header: "Process"-->
-# Process overview
+# Drop the waste
 
-1. Story mapping
-1. Event storm
-1. Analyse, update model, implement just-in-time
-   - Split work to sub-day sizes
-   - Periodically go back to 1.
-1. Many mini-retros
-
-*: For a _specific_ definition of value
-
----
-
-<!-- header: ""-->
-<!-- _class: lead invert -->
-# Architecture
-
----
-
-<!-- header: "Architecture"-->
-# Side-tracking: Benefits of a good architecture
-
-- Not _only_ performance and availability
-  - Changes are easy
-  - Changes do not cascade
-  - Changes are targeted
-  - All architectures have tradeoffs
+- Drop scrum and "Agile" (noun)
+- Kanban is not enough
+- Go back to principles
 
 <!-- 
-All of which are necessary for short cycle times
-Note the absence of easy and zero downtime deployments 
-  -> Deployment is hard or easy depends on technical details
-  -> Zero downtime deployment may not be needed at all, so not necessarily a benefit
--->
 
----
-
-<!-- header: "Architecture"-->
-<!-- _class: lead -->
-
-## Restrict dependencies & Reduce coupling
-
-<!-- 
-MULTIPLE other points. The above are just two of the most important ones. Others:
-
-- Architect "heavily inspired" from collaborative model
-- Separate logical boundaries (even if running in same process)
-- Maintainability-> Easy to support
-- Prefer performance with un-availability in face of partitions.
+• Scrum is bad:
+  - Development does not fit neat X week periods
+  - Redirects focus from customers to process
+  - Zero actual value ceremonies, bandaids over real problems
+  - Enforced process don't work
+  - Scrum master role very frequenctly is absused
+• I started with Scrum
+• Kanban is a framework for one part of development; goot to reduce waste, but doesn't cover enough of the processs
 
 -->
 
 ---
 
-<!-- header: "Architecture"-->
-## Restrict dependencies
+<!-- header: "Process"-->
+# baseline
 
-- Top tip: visualize dependencies with C4 container diagrams clearly indicating public contracts
-- Dependencies should form DAG
-- Split semantic data and store only where it's used
-- Use local caches of data
-- Duplicate data types
-
-<!-- 
-• !!Avoid semantic grouping of data!! Most common pitfall. Think processes.
-• Check to see, but vast majority of processes can live with stale data
-
-• Split\distribute data when it enters your system
-• Any dependencies must form a DAG (Directed Acyclical Graph)
-• "Tell don't ask"
-
-An example of customer with name, email, payment info, and bank details
--->
-
----
-<!-- header: "Architecture" -->
-# Reduce coupling
-
-- Avoid temporal coupling
-- Avoid behavioural coupling
-- Data coupling or stamp coupling
-
-<!-- 
-• Temporal couipling ==> use messaging. Event ECST avoids temporal coupling and is a good first step in modernization projects
-• Avoid behavioural coupling ==> Use events with reactive principles. Avoid commands
-• Avoid behavioural coupling #2 ==> Prefer choreography over 
-  - Need to be aware that choreography has issues with error handling of complex workflows
-• Data coupling ==> only have a single COHESIVE place the data is used by. Messages only include it's ID NOTE: NOT always possible
-• If 👆 is not possible fall-back to stamp / message coupling ==> publish events, observers depend on part of that structure
-  - Use local caches of data
-  - Duplicate definitions (don't share library)
--->
+1. Split work into sub-day parts
+1. Invest on rock-solid CI / CD
+1. Everything just-in-time:
+   - Prioritization
+   - Analysis
+   - Development
+1. Daily retrospective
 
 ---
 
@@ -162,9 +100,8 @@ An example of customer with name, email, payment info, and bank details
 <!-- header: "People" -->
 # Teams
 
-- Small, cross-functional teams
-- Teams form around business processes
-- "The business" is collocated with developers
+- Small, cross-functional teams (including business)
+- Teams form around non-it business functions (no overlap)
 - Decision happen internally
 
 <!-- 
@@ -173,3 +110,69 @@ An example of customer with name, email, payment info, and bank details
 • Team per core BC ideal -> if more, this is a risk of dependency of one team with the other
 • Team should be empowered. For this they need to be able to make their own decisions
 -->
+
+---
+
+<!-- header: ""-->
+<!-- _class: lead invert -->
+# Architecture
+
+---
+<!-- header: "Architecture"-->
+# Start with collaborative modelling
+
+1. Keyword: _collaborative_
+1. User story mapping
+1. Event storming (big picture → process )
+1. Just-in-time:
+   - Example mapping
+   - Event modeling
+
+---
+
+<!-- header: "Architecture"-->
+# Tip 1: Prefer asynchronous communication
+
+- Best fit for internal communication...
+- ...when latency isn't a problem
+- Use the model
+- Prefer choreography
+
+---
+
+<!-- header: "Architecture"-->
+# Tip 2: Most stable service owns the contract
+
+- If producer is stable, raise events
+- If receiver is stable, send commands
+- Webhooks behave like synchronous events
+
+---
+
+<!-- header: "Architecture"-->
+# Tip 3: Visualize the architecture
+
+- Use C4 system & container diagrams
+- Make it be an DAG
+
+---
+
+<!-- header: "Architecture"-->
+# Tip 4: Isolate data
+
+- Avoid semantic grouping of data...
+- ...only consider use
+- Split (or distribute) data on entry in the system
+
+---
+<!-- header: ""-->
+<!-- _class: lead invert -->
+# Thank you
+
+```
+
+```
+
+Savvas Kleanthous
+Twitter: <a href="https://twitter.com/skleanthous?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @skleanthous</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+More to come. Follow me on Twitter for more details.
