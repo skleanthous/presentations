@@ -5,7 +5,7 @@ theme: gaia
 paginate: true
 _paginate: false
 _footer: ""
-footer: Becoming a high performance organization - @skleanthous
+footer: Becoming a high-performance organization - @skleanthous
 ---
 
 <!-- _class: lead invert -->
@@ -37,7 +37,7 @@ footer: Becoming a high performance organization - @skleanthous
 
 ↕
 
-> An organization which relentlesly delivers value to it's customers
+> An organization which relentlessly delivers value to its customers
 
 <!-- 
 
@@ -69,20 +69,21 @@ footer: Becoming a high performance organization - @skleanthous
   - Development does not fit neat X week periods
   - Redirects focus from customers to process
   - Zero actual value ceremonies, bandaids over real problems
-  - Enforced process don't work
-  - Scrum master role very frequenctly is absused
+  - Enforced processes don't work
+  - Scrum master role very frequently is abused
 • I started with Scrum
-• Kanban is a framework for one part of development; goot to reduce waste, but doesn't cover enough of the processs
+• Kanban is a framework for one part of development; good in reducing development waste, but doesn't cover enough of the process
 
 -->
 
 ---
 
 <!-- header: "Process"-->
-# baseline
+# Baseline
 
+1. Measure everything ↔ Use o11y
 1. Split work into sub-day parts
-1. Invest on rock-solid CI / CD
+1. Invest in rock-solid CI / CD
 1. Everything just-in-time:
    - Prioritization
    - Analysis
@@ -108,7 +109,7 @@ footer: Becoming a high performance organization - @skleanthous
 • Small teams need less coordination
 • Have teams own core services along with supportive that the core needs.
 • Team per core BC ideal -> if more, this is a risk of dependency of one team with the other
-• Team should be empowered. For this they need to be able to make their own decisions
+• Team should be empowered. For this, they need to be able to make their own decisions
 -->
 
 ---
@@ -126,7 +127,7 @@ footer: Becoming a high performance organization - @skleanthous
 1. Event storming (big picture → process )
 1. Just-in-time:
    - Example mapping
-   - Event modeling
+   - Event modelling
 
 ---
 
@@ -140,8 +141,20 @@ footer: Becoming a high performance organization - @skleanthous
 
 ---
 
+# Tip 2: Use the right tool for the job
+
+- Practice polyglot persistence
+  - Event sourcing for decisions
+  - SQL \ NoSQL otherwise
+- Use a proper event store (not Kafka)
+- Purposely decide on messaging
+  - Event store
+  - Message bus
+
+---
+
 <!-- header: "Architecture"-->
-# Tip 2: Most stable service owns the contract
+# Tip 3: Most stable service owns the contract
 
 - If producer is stable, raise events
 - If receiver is stable, send commands
@@ -150,15 +163,15 @@ footer: Becoming a high performance organization - @skleanthous
 ---
 
 <!-- header: "Architecture"-->
-# Tip 3: Visualize the architecture
+# Tip 4: Visualize the architecture
 
 - Use C4 system & container diagrams
-- Make it be an DAG
+- Make it be a DAG
 
 ---
 
 <!-- header: "Architecture"-->
-# Tip 4: Isolate data
+# Tip 5: Isolate data
 
 - Avoid semantic grouping of data...
 - ...only consider use
@@ -168,8 +181,6 @@ footer: Becoming a high performance organization - @skleanthous
 <!-- header: ""-->
 <!-- _class: lead invert -->
 # Thank you
-
-```
 
 ```
 

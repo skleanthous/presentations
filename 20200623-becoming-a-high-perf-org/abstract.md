@@ -1,13 +1,13 @@
-# Becoming (and staying) a high-performant organization
+# Becoming (and staying) a high-performance organization
 
-Low lead times (the time taken from recognising a need for a feature or fix until it is put into production), and deployment frequency have been proven to be two key indicator of a highly performant team and organization, and there is a lot of discussion around these and the other two of the four key metrics, ever since the Accelerate book came out.
+The Accelerate book (Forsgren, Humble, Kim) succeeded in providing indications of what makes a high-performance organization, along with insight on the science behind the research. The findings are as valuable as they are unsurprising.
 
-However, why do we care about these metrics (are they really needed to be a highly performant organization?), and how do you go about achieving and (perhaps more importantly) maintaining low lead times and a high deployment frequency?
+However, while there is a lot of information describing the characteristics and indicators of high performers, the actionable information inside of the Accelerate is limited and focused, still leaving gaps for organizations on their way to achieve high performance.
 
-In this talk I'll be presenting some of the key aspects of a baseline of a development framework which can help you on your way towards becoming a high-performance organization. I'll cover three key aspects, one for each of:
+In this talk, I'll be introducing a baseline for a product development process which can help you on your way towards becoming a high-performance organization. I'll cover three topics:
 
 - Process: how requirements should come into a team
 - People: how to structure teams around processes, and why
 - Architecture: using reactive, event-driven systems with event sourcing to achieve low coupling
 
-While the above points are just a small selection from a comprehensive framework, these were selected because adopting the principles presented should allow you to see an immediate impact in the ability of your team to deliver value to customers.
+While the presentation will focus on some of the more important aspects of just three major aspects of a product development process, they form a reasonable baseline of a process which can give you a running start on your journey of becoming a high-performance organization.
