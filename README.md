@@ -22,3 +22,4 @@ Alternatively, from the CLI just run `npx @marp-team/marp-cli {NameOfPresentatio
 
 - DDD London 30th Jan 2020: [DDD Fireside chat: what worked, what didn't, and what we did about it!](./20200130-ddd-fireside-chat/Presentation.html)
 - DDD London 28th May 2020: [An intro to arc42](./20200528-an-intro-to-arc42/presentation.html)
+- UXDX Amsterdam 23rd June 2020: [Becoming (and staying) a high-performance organization](20200623-becoming-a-high-perf-org/presentation.html)
