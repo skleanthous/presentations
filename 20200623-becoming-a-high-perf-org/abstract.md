@@ -10,4 +10,4 @@ In this talk, I'll be introducing a baseline for a product development process w
 - People: how to structure teams around processes, and why
 - Architecture: using reactive, event-driven systems with event sourcing to achieve low coupling
 
-While the presentation will focus on some of the more important aspects of just three major aspects of a product development process, they form a reasonable baseline of a process which can give you a running start on your journey of becoming a high-performance organization.
+While the presentation will be an introduction to these three aspects of a product development process, by the end of the talk, you should have a reasonable baseline a product-development process which can give you a running start on your journey of becoming a high-performance organization.
