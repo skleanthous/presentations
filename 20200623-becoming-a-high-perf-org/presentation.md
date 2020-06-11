@@ -17,10 +17,9 @@ footer: Becoming a high-performance organization - @skleanthous
 
 ## Schedule
 
-1. Definition of high-performance - 2mins
-1. Process - 7mins
-1. People - 3 mins
-1. Architecture - 5mins
+1. Definition of high-performance - 5mins
+1. Process - 5mins
+1. Architecture - 10mins
 1. Q & A - 10mins
 
 ---
@@ -35,19 +34,48 @@ footer: Becoming a high-performance organization - @skleanthous
 <!-- header: "Definition of high performance"-->
 # A high-performance organization
 
-↕
+↕↕↕
 
-> An organization which relentlessly delivers value to its customers
+> A learning organization which relentlessly delivers value to its customers
 
-<!-- 
+---
+<!-- header: "Definition of high performance"-->
+# High-performers vs low performers
 
-• Small lead times
-• Low waste
-• Very low change failure rates
-• A meaningful definition of value
+- 46 times more frequent code deployments
+- 440 times faster lead time from commit to deployment
+- 170 times faster mean time to recovery from downtime
+- 5 times lower change failure rates
 
-• Two of the four key metrics: correlation and causation
--->
+<p style="font-style:italic;color:gray">Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations - 2018</p>
+
+---
+
+<!-- header: "Definition of high performance"-->
+# Impact on organizational performance
+
+<p style="text-align:center"><img src="./images/it-is-competitive-advantage.png" width="1000" /></p>
+
+<p style="text-align:left;font-style:italic;color:gray">State of DevOps report 2014</p>
+
+---
+
+<!-- header: "Definition of high performance"-->
+
+<p style="text-align:center"><img src="./images/software-delivery-performance-predicts-organizational-performance.png" width="900" /></p>
+
+<p style="font-style:italic;color:gray">Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations - 2018</p>
+
+---
+
+# Our experience:
+
+| | Before | After |
+|---|---|---|
+| Deployment | 1-2 times per sprint | 5-10 times per day |
+| Work lead time | 3-4 weeks | 4-5 days |
+| Deployment lead time | ~ 1hour | 20 minutes |
+
 ---
 
 <!-- header: ""-->
@@ -82,8 +110,8 @@ footer: Becoming a high-performance organization - @skleanthous
 # Baseline
 
 1. Measure everything ↔ Use o11y
-1. Split work into sub-day parts
-1. Invest in rock-solid CI / CD
+1. Split work into sub-day pieces
+1. Invest in CI / CD
 1. Everything just-in-time:
    - Prioritization
    - Analysis
@@ -94,29 +122,15 @@ footer: Becoming a high-performance organization - @skleanthous
 
 <!-- header: ""-->
 <!-- _class: lead invert -->
-# People
-
----
-
-<!-- header: "People" -->
-# Teams
-
-- Small, cross-functional teams (including business)
-- Teams form around non-it business functions (no overlap)
-- Decision happen internally
-
-<!-- 
-• Small teams need less coordination
-• Have teams own core services along with supportive that the core needs.
-• Team per core BC ideal -> if more, this is a risk of dependency of one team with the other
-• Team should be empowered. For this, they need to be able to make their own decisions
--->
-
----
-
-<!-- header: ""-->
-<!-- _class: lead invert -->
 # Architecture
+
+---
+
+<p style="text-align:center"><img src="./images/brandolini.jpg"/></p>
+
+> It is not the domain expert’s knowledge that goes into production, it is the developer’s assumption of that knowledge that goes into production
+
+Alberto Brandolini
 
 ---
 <!-- header: "Architecture"-->
@@ -146,7 +160,7 @@ footer: Becoming a high-performance organization - @skleanthous
 - Practice polyglot persistence
   - Event sourcing for decisions
   - SQL \ NoSQL otherwise
-- Use a proper event store (not Kafka)
+- Use a proper event store
 - Purposely decide on messaging
   - Event store
   - Message bus
@@ -178,9 +192,19 @@ footer: Becoming a high-performance organization - @skleanthous
 - Split (or distribute) data on entry in the system
 
 ---
+
+Reference material:
+| Process  | Architecture | People |
+|:---:|:---:|:---:|:---:|
+| ![height:160px](./images/accelerate-book.jpg) ![height:160px](./images/state-of-devops-report-2014.jpg) ![height:160px](./images/the-toyota-way.jpg)|  ![height:160px](./images/domain-driven-design.jpg) ![height:160px](./images/enterprise-integration-patterns.jpg) ![height:160px](./images/event-storming.jpg) ![height:160px](images/reactive-design-patterns.jpg) | ![height:160px](./images/team-topologies.jpg) ![height:160px](./images/context-maps.jpg) |
+
+
+---
 <!-- header: ""-->
 <!-- _class: lead invert -->
 # Thank you
+
+``` text
 
 ```
 
