@@ -15,6 +15,15 @@ footer: Becoming a high-performance organization - @skleanthous
 
 ---
 
+<!-- _class: lead invert -->
+<!-- footer: "" -->
+
+# Becoming a high-performance organization
+
+## "The techy bits"
+
+---
+
 ## Schedule
 
 1. Definition of high-performance - 5mins
@@ -26,7 +35,9 @@ footer: Becoming a high-performance organization - @skleanthous
 
 <!-- _class: lead invert -->
 
-# Definition of high performance
+# What is a high performance organization
+
+## And does it really matter?
 
 ---
 
@@ -72,9 +83,9 @@ footer: Becoming a high-performance organization - @skleanthous
 
 | | Before | After |
 |---|---|---|
-| Deployment | 1-2 times per sprint | 5-10 times per day |
+| Deployment | 1-2 times per sprint | ~10 times per day |
 | Work lead time | 3-4 weeks | 4-5 days |
-| Deployment lead time | ~ 1hour | 20 minutes |
+| deployment lead time | 5 days | ~15 minutes |
 
 ---
 
@@ -107,9 +118,26 @@ footer: Becoming a high-performance organization - @skleanthous
 ---
 
 <!-- header: "Process"-->
-# Baseline
+# Four types of work
 
-1. Measure everything ↔ Use o11y
+1. Business projects
+1. Internal projects
+1. Changes / improvements
+1. Unplanned work
+
+<!--
+
+• Recognise the different types of work
+• IMPORTANT: Leave time aside for operational changes => improvements
+
+-->
+
+---
+
+<!-- header: "Process"-->
+# Overview
+
+1. Use milestones, not strict plans
 1. Split work into sub-day pieces
 1. Invest in CI / CD
 1. Everything just-in-time:
@@ -182,6 +210,8 @@ Alberto Brandolini
 - Use C4 system & container diagrams
 - Make it be a DAG
 
+Shameless plug: [C4-PlantumlSkin](https://github.com/skleanthous/C4-PlantumlSkin)
+
 ---
 
 <!-- header: "Architecture"-->
@@ -190,6 +220,7 @@ Alberto Brandolini
 - Avoid semantic grouping of data...
 - ...only consider use
 - Split (or distribute) data on entry in the system
+- Become friends with eventual consistency
 
 ---
 
