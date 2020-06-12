@@ -90,12 +90,12 @@ footer: Becoming a high-performance organization - @skleanthous
 
 <!-- header: ""-->
 <!-- _class: lead invert -->
-# 6 tips to operational performance
+# 6 tips to achieve operational performance
 
 ---
 
 <!-- header: "Op performance tips"-->
-## How-to #1: Avoid Monoliths
+## Tip #1: How to avoid Monoliths
 
 - Anything other than a modular monolith is BAD
 - Use DDD
@@ -125,7 +125,7 @@ Alberto Brandolini
 ---
 
 <!-- header: "Op performance tips"-->
-## How-to #2: Avoid persistence ↔ domain model impedence
+## Tip #2: Avoid persistence ↔ domain model impedence
 
 - Use event-sourcing
 - Use your SME's to build your models
@@ -139,7 +139,7 @@ HELPS: Maintening the solution and adding features to domain is FAR easier
 ---
 
 <!-- header: "Op performance tips"-->
-## How-to #3: Reduce coupling
+## Tip #3: Reduce coupling
 
 - Use Event Driven Architecture
 - Apply reactive principles
@@ -156,7 +156,7 @@ HELPS: Adding features keeps taking the same amount of time as time goes by1
 ---
 
 <!-- header: "Op performance tips"-->
-## How-to #4: Reduce build times
+## Tip #4: Have meaningful test coverage
 
 - Use onion architecture → domain is dependency-free
 - Use quick-feedback tests to validate domain
@@ -172,7 +172,7 @@ HELPS: decrease deployment lead time
 ---
 
 <!-- header: "Op performance tips"-->
-## How-to #5: Reduce development-time dependencies
+## Tip #5: How to reduce development-time dependencies
 
 - Bounded Contexts (Event Storming, Context Mapping)
 - Structure teams around BC's
@@ -188,7 +188,7 @@ HELPS: Reduced lead times because one team does not have to wait for another tea
 ---
 
 <!-- header: "Op performance tips"-->
-## How-to #6: Reduce rework and waste
+## Tip #6: How to reduce rework and waste
 
 - Adopt an improvement budget
 - Cross-functional teams
