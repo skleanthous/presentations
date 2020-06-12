@@ -20,15 +20,14 @@ footer: Becoming a high-performance organization - @skleanthous
 
 # Becoming a high-performance organization
 
-## "The techy bits"
+## "The summary \ tips version"
 
 ---
 
 ## Schedule
 
-1. Definition of high-performance - 5mins
-1. Process - 5mins
-1. Architecture - 10mins
+1. Definition of high-performance - 5 mins
+1. 6 tips for operational performance - 15 mins
 1. Q & A - 10mins
 
 ---
@@ -91,66 +90,29 @@ footer: Becoming a high-performance organization - @skleanthous
 
 <!-- header: ""-->
 <!-- _class: lead invert -->
-# Process
+# 6 tips to operational performance
 
 ---
 
-<!-- header: "Process"-->
-# Drop the waste
+<!-- header: "Op performance tips"-->
+## How to #1: Avoid Monoliths
 
-- Drop scrum and "Agile" (noun)
-- Kanban is not enough
-- Go back to principles
-
-<!-- 
-
-• Scrum is bad:
-  - Development does not fit neat X week periods
-  - Redirects focus from customers to process
-  - Zero actual value ceremonies, bandaids over real problems
-  - Enforced processes don't work
-  - Scrum master role very frequently is abused
-• I started with Scrum
-• Kanban is a framework for one part of development; good in reducing development waste, but doesn't cover enough of the process
-
--->
-
----
-
-<!-- header: "Process"-->
-# Four types of work
-
-1. Business projects
-1. Internal projects
-1. Changes / improvements
-1. Unplanned work
+- Anything other than a modular monolith is BAD
+- Use DDD
+- Use Context mapping
+- Use EventStorming
 
 <!--
+• This includes distributed monolits
 
-• Recognise the different types of work
-• IMPORTANT: Leave time aside for operational changes => improvements
+• DDD helps you identify Bounded Contexts: domain (think business departments) boundaries and model them in code, encapsulating complexity
+• Event Storming builds on top of that and further helps identify contexts and discover business processes
+• Context mapping will help you model the integration between BC's
 
+• The above are the only really safe way to do microservices. You may succeed outside of DDD / Event Storming, but you're taking a bet
+
+HELPS: by keeping amount of time needed to introduce changes small by encapsulating changes
 -->
-
----
-
-<!-- header: "Process"-->
-# Overview
-
-1. Use milestones, not strict plans
-1. Split work into sub-day pieces
-1. Invest in CI / CD
-1. Everything just-in-time:
-   - Prioritization
-   - Analysis
-   - Development
-1. Daily retrospective
-
----
-
-<!-- header: ""-->
-<!-- _class: lead invert -->
-# Architecture
 
 ---
 
@@ -161,66 +123,69 @@ footer: Becoming a high-performance organization - @skleanthous
 Alberto Brandolini
 
 ---
-<!-- header: "Architecture"-->
-# Start with collaborative modelling
 
-1. Keyword: _collaborative_
-1. User story mapping
-1. Event storming (big picture → process )
-1. Just-in-time:
-   - Example mapping
-   - Event modelling
+<!-- header: "Op performance tips"-->
+## How to #2: Avoid persistence ↔ domain model impedence
 
----
+- Use event-sourcing
+- Use Event Storming or Event Modeling
 
-<!-- header: "Architecture"-->
-# Tip 1: Prefer asynchronous communication
-
-- Best fit for internal communication...
-- ...when latency isn't a problem
-- Use the model
-- Prefer choreography
+<!--
+HELPS: Helps guarantee the information is there when you need it
+HELPS: Maintening the solution and adding features to domain is FAR easier
+-->
 
 ---
 
-# Tip 2: Use the right tool for the job
+<!-- header: "Op performance tips"-->
+## How to #3: Reduce coupling
 
-- Practice polyglot persistence
-  - Event sourcing for decisions
-  - SQL \ NoSQL otherwise
-- Use a proper event store
-- Purposely decide on messaging
-  - Event store
-  - Message bus
+- Use Event Driven Architecture
+- Apply reactive principles
+- Prefer choerography...
+- ...or share-nothing
 
----
-
-<!-- header: "Architecture"-->
-# Tip 3: Most stable service owns the contract
-
-- If producer is stable, raise events
-- If receiver is stable, send commands
-- Webhooks behave like synchronous events
+<!--
+HELPS: Changes do not cascade
+HELPS: Adding features keeps taking the same amount of time as time goes by1
+-->
 
 ---
 
-<!-- header: "Architecture"-->
-# Tip 4: Visualize the architecture
+<!-- header: "Op performance tips"-->
+## How to #4: Reduce build times
 
-- Use C4 system & container diagrams
-- Make it be a DAG
+- Use onion architecture → domain is dependency-free
+- Use quick-feedback tests to validate domain
+- Use contract tests to test public data contract versions
+- Small number of end-to-end tests
 
-Shameless plug: [C4-PlantumlSkin](https://github.com/skleanthous/C4-PlantumlSkin)
+<!--
+HELPS: decrease deployment lead time
+
+• OBVIOUSLY: you need rock-solid CI / CD
+-->
 
 ---
 
-<!-- header: "Architecture"-->
-# Tip 5: Isolate data
+<!-- header: "Op performance tips"-->
+## How-to #5: Reduce development-time dependencies
 
-- Avoid semantic grouping of data...
-- ...only consider use
-- Split (or distribute) data on entry in the system
-- Become friends with eventual consistency
+- Bounded Contexts (Event Storming, Context Mapping)
+- Structure teams around BC's
+- Event Driven Architecture
+- More stable service owns the contract
+
+---
+
+<!-- header: "Op performance tips"-->
+## Tip 6: Reduce rework and waste
+
+- 4 types of work
+- Adopt an improvement budget
+- Prioritize just-in-time
+- Swarm / pair
+- Carefully consider all alternatives
 
 ---
 
