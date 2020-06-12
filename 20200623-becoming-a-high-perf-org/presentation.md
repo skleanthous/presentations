@@ -20,13 +20,14 @@ footer: Becoming a high-performance organization - @skleanthous
 
 # Becoming a high-performance organization
 
-## "The summary \ tips version"
+## "The top tips version"
 
 ---
 
 ## Schedule
 
-1. Definition of high-performance - 5 mins
+1. Intro - 1 min
+1. Definition of high-performance - 4 mins
 1. 6 tips for operational performance - 15 mins
 1. Q & A - 10mins
 
