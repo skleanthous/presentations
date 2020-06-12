@@ -95,7 +95,7 @@ footer: Becoming a high-performance organization - @skleanthous
 ---
 
 <!-- header: "Op performance tips"-->
-## How to #1: Avoid Monoliths
+## How-to #1: Avoid Monoliths
 
 - Anything other than a modular monolith is BAD
 - Use DDD
@@ -125,7 +125,7 @@ Alberto Brandolini
 ---
 
 <!-- header: "Op performance tips"-->
-## How to #2: Avoid persistence ↔ domain model impedence
+## How-to #2: Avoid persistence ↔ domain model impedence
 
 - Use event-sourcing
 - Use Event Storming or Event Modeling
@@ -138,7 +138,7 @@ HELPS: Maintening the solution and adding features to domain is FAR easier
 ---
 
 <!-- header: "Op performance tips"-->
-## How to #3: Reduce coupling
+## How-to #3: Reduce coupling
 
 - Use Event Driven Architecture
 - Apply reactive principles
@@ -153,7 +153,7 @@ HELPS: Adding features keeps taking the same amount of time as time goes by1
 ---
 
 <!-- header: "Op performance tips"-->
-## How to #4: Reduce build times
+## How-to #4: Reduce build times
 
 - Use onion architecture → domain is dependency-free
 - Use quick-feedback tests to validate domain
@@ -176,16 +176,30 @@ HELPS: decrease deployment lead time
 - Event Driven Architecture
 - More stable service owns the contract
 
+<!--
+HELPS: Reduced lead times because one team does not have to wait for another team
+
+• Event driven architectures help reduce development time dependencies due to NO behavioural coupling
+-->
+
 ---
 
 <!-- header: "Op performance tips"-->
-## Tip 6: Reduce rework and waste
+## How-to #6: Reduce rework and waste
 
-- 4 types of work
 - Adopt an improvement budget
-- Prioritize just-in-time
-- Swarm / pair
+- Cross-functional teams
+- Swarm / pair (one-piece flow)
+- Pull-based system for development (with WIP)
 - Carefully consider all alternatives
+
+<!--
+
+HELPS: Time taken in rework or waste, is time which isn't used in delivering value
+
+All of above help with both waste and rework.
+
+-->
 
 ---
 
