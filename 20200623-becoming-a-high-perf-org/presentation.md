@@ -98,7 +98,7 @@ footer: Becoming a high-performance organization - @skleanthous
 <!-- header: "Op performance tips"-->
 ## Tip #1: How to avoid Monoliths
 
-- Anything other than a modular monolith is BAD
+- A modular monolith is probably OK
 - Use DDD
 - Use Context mapping
 - Use EventStorming
@@ -223,5 +223,8 @@ Reference material:
 ```
 
 Savvas Kleanthous
+
+You can find this presentation here: https://skleanthous.github.io/presentations/
+
 Twitter: <a href="https://twitter.com/skleanthous?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @skleanthous</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 More to come. Follow me on Twitter for more details.
