@@ -128,6 +128,7 @@ Alberto Brandolini
 ## How-to #2: Avoid persistence ↔ domain model impedence
 
 - Use event-sourcing
+- Use your SME's to build your models
 - Use Event Storming or Event Modeling
 
 <!--
@@ -148,6 +149,8 @@ HELPS: Maintening the solution and adding features to domain is FAR easier
 <!--
 HELPS: Changes do not cascade
 HELPS: Adding features keeps taking the same amount of time as time goes by1
+
+
 -->
 
 ---
