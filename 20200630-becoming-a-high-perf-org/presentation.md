@@ -15,18 +15,29 @@ footer: Becoming a high-performance organization - @skleanthous
 
 ---
 
+<!-- _class: lead invert -->
+<!-- footer: "" -->
+
+# Becoming a high-performance organization
+
+## "The top tips version"
+
+---
+
 ## Schedule
 
-1. Definition of high-performance - 5mins
-1. Process - 5mins
-1. Architecture - 10mins
+1. Intro - 1 min
+1. Definition of high-performance - 4 mins
+1. 6 tips for operational performance - 15 mins
 1. Q & A - 10mins
 
 ---
 
 <!-- _class: lead invert -->
 
-# Definition of high performance
+# What is a high performance organization
+
+## And does it really matter?
 
 ---
 
@@ -72,57 +83,37 @@ footer: Becoming a high-performance organization - @skleanthous
 
 | | Before | After |
 |---|---|---|
-| Deployment | 1-2 times per sprint | 5-10 times per day |
+| Deployment | 1-2 times per sprint | ~10 times per day |
 | Work lead time | 3-4 weeks | 4-5 days |
-| Deployment lead time | ~ 1hour | 20 minutes |
+| deployment lead time | 5 days | ~15 minutes |
 
 ---
 
 <!-- header: ""-->
 <!-- _class: lead invert -->
-# Process
+# 6 tips to achieve operational performance
 
 ---
 
-<!-- header: "Process"-->
-# Drop the waste
+<!-- header: "Op performance tips"-->
+## Tip #1: How to avoid Monoliths
 
-- Drop scrum and "Agile" (noun)
-- Kanban is not enough
-- Go back to principles
+- A modular monolith is probably OK
+- Use DDD
+- Use Context mapping
+- Use EventStorming
 
-<!-- 
+<!--
+• This includes distributed monolits
 
-• Scrum is bad:
-  - Development does not fit neat X week periods
-  - Redirects focus from customers to process
-  - Zero actual value ceremonies, bandaids over real problems
-  - Enforced processes don't work
-  - Scrum master role very frequently is abused
-• I started with Scrum
-• Kanban is a framework for one part of development; good in reducing development waste, but doesn't cover enough of the process
+• DDD helps you identify Bounded Contexts: domain (think business departments) boundaries and model them in code, encapsulating complexity
+• Event Storming builds on top of that and further helps identify contexts and discover business processes
+• Context mapping will help you model the integration between BC's
 
+• The above are the only really safe way to do microservices. You may succeed outside of DDD / Event Storming, but you're taking a bet
+
+HELPS: by keeping amount of time needed to introduce changes small by encapsulating changes
 -->
-
----
-
-<!-- header: "Process"-->
-# Baseline
-
-1. Measure everything ↔ Use o11y
-1. Split work into sub-day pieces
-1. Invest in CI / CD
-1. Everything just-in-time:
-   - Prioritization
-   - Analysis
-   - Development
-1. Daily retrospective
-
----
-
-<!-- header: ""-->
-<!-- _class: lead invert -->
-# Architecture
 
 ---
 
@@ -133,63 +124,86 @@ footer: Becoming a high-performance organization - @skleanthous
 Alberto Brandolini
 
 ---
-<!-- header: "Architecture"-->
-# Start with collaborative modelling
 
-1. Keyword: _collaborative_
-1. User story mapping
-1. Event storming (big picture → process )
-1. Just-in-time:
-   - Example mapping
-   - Event modelling
+<!-- header: "Op performance tips"-->
+## Tip #2: Avoid persistence ↔ domain model impedence
 
----
+- Use event-sourcing
+- Use your SME's to build your models
+- Use Event Storming or Event Modeling
 
-<!-- header: "Architecture"-->
-# Tip 1: Prefer asynchronous communication
-
-- Best fit for internal communication...
-- ...when latency isn't a problem
-- Use the model
-- Prefer choreography
+<!--
+HELPS: Helps guarantee the information is there when you need it
+HELPS: Maintening the solution and adding features to domain is FAR easier
+-->
 
 ---
 
-# Tip 2: Use the right tool for the job
+<!-- header: "Op performance tips"-->
+## Tip #3: Reduce coupling
 
-- Practice polyglot persistence
-  - Event sourcing for decisions
-  - SQL \ NoSQL otherwise
-- Use a proper event store
-- Purposely decide on messaging
-  - Event store
-  - Message bus
+- Use Event Driven Architecture
+- Apply reactive principles
+- Prefer choerography...
+- ...or share-nothing
 
----
+<!--
+HELPS: Changes do not cascade
+HELPS: Adding features keeps taking the same amount of time as time goes by1
 
-<!-- header: "Architecture"-->
-# Tip 3: Most stable service owns the contract
 
-- If producer is stable, raise events
-- If receiver is stable, send commands
-- Webhooks behave like synchronous events
+-->
 
 ---
 
-<!-- header: "Architecture"-->
-# Tip 4: Visualize the architecture
+<!-- header: "Op performance tips"-->
+## Tip #4: Have meaningful test coverage
 
-- Use C4 system & container diagrams
-- Make it be a DAG
+- Use onion architecture → domain is dependency-free
+- Use quick-feedback tests to validate domain
+- Use contract tests to test public data contract versions
+- Small number of end-to-end tests
+
+<!--
+HELPS: decrease deployment lead time
+
+• OBVIOUSLY: you need rock-solid CI / CD
+-->
 
 ---
 
-<!-- header: "Architecture"-->
-# Tip 5: Isolate data
+<!-- header: "Op performance tips"-->
+## Tip #5: How to reduce development-time dependencies
 
-- Avoid semantic grouping of data...
-- ...only consider use
-- Split (or distribute) data on entry in the system
+- Bounded Contexts (Event Storming, Context Mapping)
+- Structure teams around BC's
+- Event Driven Architecture
+- More stable service owns the contract
+
+<!--
+HELPS: Reduced lead times because one team does not have to wait for another team
+
+• Event driven architectures help reduce development time dependencies due to NO behavioural coupling
+-->
+
+---
+
+<!-- header: "Op performance tips"-->
+## Tip #6: How to reduce rework and waste
+
+- Adopt an improvement budget
+- Cross-functional teams
+- Swarm / pair (one-piece flow)
+- Pull-based system for development (with WIP)
+- Carefully consider all alternatives
+
+<!--
+
+HELPS: Time taken in rework or waste, is time which isn't used in delivering value
+
+All of above help with both waste and rework.
+
+-->
 
 ---
 
@@ -209,5 +223,8 @@ Reference material:
 ```
 
 Savvas Kleanthous
+
+You can find this presentation here: https://skleanthous.github.io/presentations/
+
 Twitter: <a href="https://twitter.com/skleanthous?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @skleanthous</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 More to come. Follow me on Twitter for more details.
