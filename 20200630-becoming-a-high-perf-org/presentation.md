@@ -96,10 +96,9 @@ footer: Becoming a high-performance organization - @skleanthous
 ---
 
 <!-- header: "Op performance tips"-->
-## Tip #1: How to avoid Monoliths
+## Tip #1: Meaningfully decide on decomposition
 
-- A modular monolith is probably OK
-- Use DDD
+- Use DDD / Bounded Contexts
 - Use Context mapping
 - Use EventStorming
 
