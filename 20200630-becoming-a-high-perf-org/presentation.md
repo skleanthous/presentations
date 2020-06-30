@@ -26,10 +26,28 @@ footer: Becoming a high-performance organization - @skleanthous
 
 ## Schedule
 
-1. Intro - 1 min
-1. Definition of high-performance - 4 mins
+1. What? Why? - 5 min
+1. Definition of high-performance - 5 mins
 1. 6 tips for operational performance - 15 mins
-1. Q & A - 10mins
+1. Q & A - 15mins
+
+---
+
+<!-- _class: lead invert -->
+
+# What? Why?
+
+---
+
+![bg 70%](./images/lost-maze.jpg)
+
+---
+
+![bg](./images/puzzle-pieces.jpeg)
+
+---
+
+![bg](./images/library.jpg)
 
 ---
 
