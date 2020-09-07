@@ -25,8 +25,132 @@ _Building the right thing_
 ---
 
 <!-- _class: lead invert -->
+<!-- _footer: "" -->
+![bg blur](./images/puppets.jpg)
+
+<style scoped>
+h1,h2,h3 {
+  text-shadow: 0 0 3px #000000, 0 0 5px #0000FF;
+}
+</style>
+
+
+# But first a story:
+
+## experiences from my career
+
+---
+
+<!-- _footer: "" -->
+![bg](./images/broken-telephone.jpg)
+
+<!-- 
+
+As a junior problem 1:
+
+PM required features done
+PM told BA's
+BA's spoke to SME's to get requirements
+BA's analysed requirements
+BA's spoke to architects
+Architects did their thing
+Requirements + architecture were pushed to dev team
+
+-->
+
+---
+
+<!-- _footer: ""-->
+![bg fit](./images/clock.jpg)
+
+<!-- 
+Outcome: Missed deadlines, wrong functionality delivered, many bugs, unhappy customers.
+-->
+
+---
+
+<!-- _footer: "" -->
+![bg fit](./images/castle-tower.jpg)
+
+<!-- 
+
+Later in life:
+
+BA was part of the team
+But architecture was external
+Discoveries did not change design or approach
+
+
+Better than before, but more missed deadlines, overtime, again unhappy customers, bugs
+-->
+
+---
+
+<!-- _footer: ""-->
+![bg zoom: 60%](./images/clock.jpg)
+
+---
+
+<!-- _footer: "" -->
+![bg ](./images/what-now.jpg)
+
+<!-- 
+
+Later in life:
+
+Agile won, but as a knee-jerk reaction to big-up-front planning
+it seems as if the world rejected entirely the notion of up front
+design. We lost conceptual integrity entirely.
+
+Decisions were only locally optimized, and the network effect of
+communication across departments exploded.
+
+Dependencies from other departments started becoming show-stoppers.
+
+-->
+
+---
+
+<!-- _footer: ""-->
+![bg ](./images/holiday-champagne.jpg)
+
+<!-- 
+
+Awesome? Nope.
+
+-->
+
+---
+
+<!-- _footer: ""-->
+![bg ](./images/clock-zoomed.jpg)
+
+<!-- 
+
+Yes, you guessed it, better than before, but still problematic:
+
++ Feedback now exists and is considered
+- No real communication across departments
+- No visibility of what other teams are doing
+- Localized decisions need to be repeated in other teams
+- Loss of conceptual integrity: different parts implement different patterns, or behave slightly different. It feels like a disjointed bundle of pieces
+
+-->
+
+---
+
+<!-- _class: lead invert -->
 
 # Why event storming?
+
+---
+
+# It fixes _everything_! (almost)
+
+- No more silos
+- Everyone has a voice
+- Clarity on what's going on
+- Shared understanding
 
 ---
 
@@ -49,14 +173,13 @@ _Building the right thing_
 
 # Why not something else?
 
-Event modelling comes close, but lacks on brainstorming aspect
-
-Mainly lacking:
+Others mainly lacking:
 
 - Brainstorming
 - Ease of refactoring
 - Different scopes
 - Ability to involve SME's
+- Gated access to information
 
 ---
 
@@ -66,17 +189,23 @@ Mainly lacking:
 
 ---
 
+<!-- _class: lead invert -->
+<!-- _footer: "" -->
+![bg contain](./images/big-picture-sample.jpg)
+
+---
+
 # What is it?
 
 - An exploration of the problem space
 - Focus on discussion!
 - Shared understanding
 
+#### →Importantly, it solves most of the problems I mentioned in my introduction
+
 ---
 
 # Who participates in it?
-
-Everyone:
 
 - Founders
 - Subject matter experts
@@ -86,14 +215,8 @@ Everyone:
 
 ---
 
-# How does it look like?
-
-![bg contain](./images/big-picture-sample.jpg)
-
----
-
-# Sitckie legend for big picture
-
+<!-- _class: lead invert -->
+<!-- _footer: "" -->
 ![bg contain](./images/big-picture-legend.jpg)
 
 ---
@@ -104,11 +227,19 @@ Everyone:
 
 ---
 
+<!-- _class: lead invert-->
+<!-- _footer: "" -->
+
+![bg contain](./images/process-sample.jpg)
+
+---
+
 # What is it?
 
 - Collaborative workshop to model processes
-- Narrower scope than big picture - "zoomed" in
+- Narrower scope than big picture \ "zoomed" in
 - Clear boundaries defined
+- Often the right level to drive development
 
 ---
 
@@ -120,15 +251,8 @@ Everyone:
 
 ---
 
-# How does it look like?
-
-![Image goes here]()
-
----
-
 <!-- _footer: "" -->
-
-# Legend
+<!-- _class: lead invert -->
 
 ![bg contain](./images/process-legend.jpg)
 
@@ -140,31 +264,19 @@ Everyone:
 
 ---
 
-# What is it?
+# What is it and who participates?
 
-- A
-- B
-- C
-
----
-
-# Who participates in it?
-
-- A
-- B
-- C
-
----
-
-# How does it look like?
-
-![Image goes here]()
+- Collaborative workshop to agree on software design
+- Entire product team participates: 
+  - SME's
+  - PO's
+  - UX
+  - dev team
 
 ---
 
 <!-- _footer: "" -->
-
-# Legend
+<!-- _class: lead invert -->
 
 ![bg contain](./images/design-legend.jpg)
 

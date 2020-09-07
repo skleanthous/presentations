@@ -17,14 +17,21 @@ __[Live demo](https://markdown-it.github.io)__
 
 __Table of content__
 
-- [Install](#install)
-- [Usage examples](#usage-examples)
-- [API](#api)
-- [Syntax extensions](#syntax-extensions)
-- [Benchmark](#benchmark)
-- [Authors](#authors)
-- [References / Thanks](#references--thanks)
-- [License](#license)
+- [markdown-it](#markdown-it)
+  - [Install](#install)
+  - [Usage examples](#usage-examples)
+    - [Simple](#simple)
+    - [Init with presets and options](#init-with-presets-and-options)
+    - [Plugins load](#plugins-load)
+    - [Syntax highlighting](#syntax-highlighting)
+    - [Linkify](#linkify)
+  - [API](#api)
+  - [Syntax extensions](#syntax-extensions)
+    - [Manage rules](#manage-rules)
+  - [Benchmark](#benchmark)
+  - [Support markdown-it](#support-markdown-it)
+  - [Authors](#authors)
+  - [References / Thanks](#references--thanks)
 
 ## Install
 
@@ -235,6 +242,10 @@ md = require('markdown-it')({
 });
 ```
 
+You can find all rules in sources:
+[parser_core.js](lib/parser_core.js), [parser_block](lib/parser_block.js),
+[parser_inline](lib/parser_inline.js).
+
 
 ## Benchmark
 
@@ -262,6 +273,13 @@ Slowdown of "full" version caused by additional features not available in
 other implementations.
 
 
+## markdown-it for enterprise
+
+Available as part of the Tidelift Subscription.
+
+The maintainers of `markdown-it` and thousands of other packages are working with Tidelift to deliver commercial support and maintenance for the open source dependencies you use to build your applications. Save time, reduce risk, and improve code health, while paying the maintainers of the exact dependencies you use. [Learn more.](https://tidelift.com/subscription/pkg/npm-markdown-it?utm_source=npm-markdown-it&utm_medium=referral&utm_campaign=enterprise&utm_term=repo)
+
+
 ## Authors
 
 - Alex Kocharin [github/rlidwka](https://github.com/rlidwka)
@@ -287,8 +305,4 @@ during this project's development.
 **Ports**
 
 - [motion-markdown-it](https://github.com/digitalmoksha/motion-markdown-it) - Ruby/RubyMotion
-
-
-## License
-
-[MIT](https://github.com/markdown-it/markdown-it/blob/master/LICENSE)
+- [markdown-it-py](https://github.com/ExecutableBookProject/markdown-it-py)- Python
