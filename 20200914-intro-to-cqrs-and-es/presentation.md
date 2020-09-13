@@ -4,12 +4,12 @@ theme: gaia
 paginate: true
 _paginate: false
 _footer: ""
-footer: "Intro and Q&A about CQRS and ES - @skleanthous"
+footer: "Intro to CQRS and ES, and Q&A - @skleanthous"
 ---
 
 <!-- _class: lead invert -->
 
-# An introduction and Q&A to CQRS and Event Sourcing
+# An introduction to CQRS and Event Sourcing, and Q & A
 
 ---
 
@@ -90,7 +90,7 @@ Event sourcing:
 <!-- _header: "Event Sourcing - what it is and isn't" -->
 # Event sourcing best tips #1
 
-> Modernizing from monolith with single normal form db directly to microservices with event sourcing, without prior experience with microservices and event sourcing, is something that you want to think twice about
+> Modernizing from monolith with single normal form db directly to event-driven microservices with event sourcing, without prior experience, is something that you want to rethink
 
 <p style="text-align:right;"><img src="./images/mugshot-small.png" height="160" alt="My picture"/><br>Savvas Kleanthous<br>2 days ago</p>
 
@@ -151,7 +151,7 @@ Event sourcing:
 # CQRS
 
 - Does **not** necessitate asynchronous paths
-- Is **not** a system architecture (but is service architecture)
+- Does **not** need separate db's
 - Does **not** need Event Sourcing
 
 ----
@@ -165,6 +165,14 @@ Event sourcing:
 <!-- _header: "Frequently Asked Questions" -->
 <!-- _class: lead -->
 # 1. How do you enforce uniqueness with Event Sourcing?
+
+<!-- 
+
+- For natural keys that don't change => Stream names
+- Use a separate consistency boundary to enforce uniqueness (also it can be in stream or sql, whatever)
+- Allow action, observe and take observing actions (sometimes even humans)
+
+-->
 
 ---
 <!-- _header: "Frequently Asked Questions" -->
@@ -190,12 +198,11 @@ Some of:
 
 <!--
 
-A must when
+When
 - Cost\risk to maintain external audit log is higher than adopting ES
-- You have Temporal queries (NOT "simple when was the last change", but "get all actions after X happened", or when you need point-in-time system restore (hey git!))
+- Probably a must when you have Temporal queries (NOT "simple when was the last change", but "get all actions after X happened", or when you need point-in-time system restore (hey git!))
 BUT! for ↑ you _need_ on-demand access to SME's, or at least very regular direct access to them AND design events collaboratively with them
-
-If you have already experience in the team, and access to SME's, Event sourcing is a good default for anything other than generic services.
+- If you have already experience in the team, and access to SME's, Event sourcing is a good default for anything other than generic services.
 
 -->
 
@@ -225,7 +232,7 @@ If you have already experience in the team, and access to SME's, Event sourcing 
 
 # Q & A session
 
-Ask anything you want, but for this session please keep it a beginnerlevel
+Ask anything you want, but for this session please keep it at beginners level
 
 ---
 
