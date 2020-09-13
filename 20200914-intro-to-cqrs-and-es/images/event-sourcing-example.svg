@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="326px" preserveAspectRatio="none" style="width:1095px;height:326px;" version="1.1" viewBox="0 0 1095 326" width="1095px" zoomAndPan="magnify"><defs><filter height="300%" id="ftj9jzk8ot4h3" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[5d0cec7cbf9631907568b17aa5d76599]
+cluster small--><rect fill="#FFFFFF" filter="url(#ftj9jzk8ot4h3)" height="131" style="stroke: #000000; stroke-width: 1.5;" width="750" x="12" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="102" x="336" y="21.9951">Account 412</text><!--MD5=[84608a1657421786da126b3bf5791f36]
+cluster large--><rect fill="#FFFFFF" filter="url(#ftj9jzk8ot4h3)" height="131" style="stroke: #000000; stroke-width: 1.5;" width="1066" x="12" y="178"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="102" x="494" y="192.9951">Account 624</text><g id="small.opened"><rect fill="#FEFECE" filter="url(#ftj9jzk8ot4h3)" height="64.2344" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="140" x="55" y="50"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="55" x2="195" y1="76.2969" y2="76.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="120" x="65" y="67.9951">Account Opened</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="118" x="60" y="92.4355">OpeningBalance £0</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="38" x="60" y="106.4043">guid A</text></g><g id="small.deposit1"><rect fill="#FEFECE" filter="url(#ftj9jzk8ot4h3)" height="64.2344" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="140" x="230" y="50"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="230" x2="370" y1="76.2969" y2="76.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="99" x="250.5" y="67.9951">Deposit Made</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="120" x="235" y="92.4355">DepositAmount £50</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="38" x="235" y="106.4043">guid B</text></g><g id="small.deposit2"><rect fill="#FEFECE" filter="url(#ftj9jzk8ot4h3)" height="64.2344" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="140" x="405" y="50"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="405" x2="545" y1="76.2969" y2="76.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="99" x="425.5" y="67.9951">Deposit Made</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="120" x="410" y="92.4355">DepositAmount £25</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="38" x="410" y="106.4043">guid C</text></g><g id="small.withdraw"><rect fill="#FEFECE" filter="url(#ftj9jzk8ot4h3)" height="64.2344" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="158" x="580" y="50"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="580" x2="738" y1="76.2969" y2="76.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="80" x="619" y="67.9951">Withdrawal</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="138" x="585" y="92.4355">WithdrawalAmount £15</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="39" x="585" y="106.4043">guid D</text></g><g id="large.opened2a"><rect fill="#FEFECE" filter="url(#ftj9jzk8ot4h3)" height="64.2344" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="140" x="55" y="221"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="55" x2="195" y1="247.2969" y2="247.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="120" x="65" y="238.9951">Account Opened</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="118" x="60" y="263.4355">OpeningBalance £0</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="37" x="60" y="277.4043">guid E</text></g><g id="large.deposit2a"><rect fill="#FEFECE" filter="url(#ftj9jzk8ot4h3)" height="64.2344" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="140" x="230" y="221"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="230" x2="370" y1="247.2969" y2="247.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="99" x="250.5" y="238.9951">Deposit Made</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="120" x="235" y="263.4355">DepositAmount £30</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="37" x="235" y="277.4043">guid F</text></g><g id="large.int2a"><rect fill="#FEFECE" filter="url(#ftj9jzk8ot4h3)" height="64.2344" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="112" x="405" y="221"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="405" x2="517" y1="247.2969" y2="247.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="92" x="415" y="238.9951">Interest Paid</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="65" x="410" y="263.4355">Interest £1</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="39" x="410" y="277.4043">guid G</text></g><g id="large.deposit22a"><rect fill="#FEFECE" filter="url(#ftj9jzk8ot4h3)" height="64.2344" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="148" x="552" y="221"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="552" x2="700" y1="247.2969" y2="247.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="99" x="576.5" y="238.9951">Deposit Made</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="128" x="557" y="263.4355">DepositAmount £500</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="39" x="557" y="277.4043">guid H</text></g><g id="large.undone"><rect fill="#FEFECE" filter="url(#ftj9jzk8ot4h3)" height="64.2344" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="151" x="735.5" y="221"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="735.5" x2="886.5" y1="247.2969" y2="247.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="131" x="745.5" y="238.9951">Deposit Cancelled</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="130" x="740.5" y="263.4355">DepositCancelledId H</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="33" x="740.5" y="277.4043">guid I</text></g><g id="large.deposit32a"><rect fill="#FEFECE" filter="url(#ftj9jzk8ot4h3)" height="64.2344" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="132" x="922" y="221"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="922" x2="1054" y1="247.2969" y2="247.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="99" x="938.5" y="238.9951">Deposit Made</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="112" x="927" y="263.4355">DepositAmount £5</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="34" x="927" y="277.4043">guid J</text></g><!--MD5=[e6862d19fdf6afd72616f61645d0a4f4]
+link opened to deposit1--><path codeLine="19" d="M195.068,82 C204.958,82 214.848,82 224.737,82 " fill="none" id="opened-to-deposit1" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="229.909,82,220.909,78,224.909,82,220.909,86,229.909,82" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[622840fa02aa2f5db6620af28dea924e]
+link deposit1 to deposit2--><path codeLine="20" d="M370.068,82 C379.958,82 389.848,82 399.737,82 " fill="none" id="deposit1-to-deposit2" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="404.909,82,395.909,78,399.909,82,395.909,86,404.909,82" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[33e07e9d31bae1d3fed0a7c5022587ae]
+link deposit2 to withdraw--><path codeLine="21" d="M545.078,82 C554.931,82 564.784,82 574.636,82 " fill="none" id="deposit2-to-withdraw" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="579.789,82,570.789,78,574.789,82,570.789,86,579.789,82" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[62f08361fd33ca9a0a60c5fd027eb8d4]
+link opened2a to deposit2a--><path codeLine="45" d="M195.068,253 C204.958,253 214.848,253 224.737,253 " fill="none" id="opened2a-to-deposit2a" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="229.909,253,220.909,249,224.909,253,220.909,257,229.909,253" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[bb23a606a373e52707a0a8c3fc05bbcc]
+link deposit2a to int2a--><path codeLine="46" d="M370.123,253 C379.998,253 389.873,253 399.748,253 " fill="none" id="deposit2a-to-int2a" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="404.912,253,395.912,249,399.912,253,395.912,257,404.912,253" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[9bd789e792bfa086db6fb3b62febc66f]
+link int2a to deposit22a--><path codeLine="47" d="M517.074,253 C526.978,253 536.882,253 546.785,253 " fill="none" id="int2a-to-deposit22a" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="551.965,253,542.965,249,546.965,253,542.965,257,551.965,253" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[ccf7855bbf7db1392d60f3e2ec2d3e19]
+link deposit22a to undone--><path codeLine="48" d="M700.072,253 C710.035,253 719.998,253 729.961,253 " fill="none" id="deposit22a-to-undone" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="735.17,253,726.17,249,730.17,253,726.17,257,735.17,253" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[1f8ffe9bb7e4a52cf4d8d565e1f11dd7]
+link undone to deposit32a--><path codeLine="49" d="M886.709,253 C896.705,253 906.701,253 916.696,253 " fill="none" id="undone-to-deposit32a" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="921.923,253,912.923,249,916.923,253,912.923,257,921.923,253" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[402b382974a252749b8b7758582b3d8d]
+link small to large--><!--MD5=[dca2896426df395cae240117c3b650e9]
+@startuml
+allow_mixing
+
+rectangle "Account 412" as small {
+
+state "Account Opened" as opened
+state "Deposit Made" as deposit1
+state "Deposit Made" as deposit2
+state "Withdrawal" as withdraw
+
+opened : OpeningBalance £0
+opened : guid A
+deposit1 : DepositAmount £50
+deposit1 : guid B
+deposit2 : DepositAmount £25
+deposit2 : guid C
+withdraw : WithdrawalAmount £15
+withdraw : guid D
+
+opened -right-> deposit1
+deposit1 -right-> deposit2
+deposit2 -right-> withdraw
+}
+
+rectangle "Account 624" as large {
+    state "Account Opened" as opened2a
+    state "Deposit Made" as deposit2a
+    state "Interest Paid" as int2a
+    state "Deposit Made" as deposit22a
+    state "Deposit Cancelled" as undone
+    state "Deposit Made" as deposit32a
+    
+    opened2a : OpeningBalance £0
+    opened2a : guid E
+    deposit2a : DepositAmount £30
+    deposit2a : guid F
+    int2a : Interest £1
+    int2a : guid G
+    deposit22a : DepositAmount £500
+    deposit22a : guid H
+    undone : DepositCancelledId H
+    undone : guid I
+    deposit32a : DepositAmount £5
+    deposit32a : guid J
+    
+    opened2a -right-> deposit2a
+    deposit2a -right-> int2a
+    int2a -right-> deposit22a
+    deposit22a -right-> undone
+    undone -right-> deposit32a
+}
+
+small -[hidden]down-> large
+@enduml
+
+PlantUML version 1.2020.17beta5(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
