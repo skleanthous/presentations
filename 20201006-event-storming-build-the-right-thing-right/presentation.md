@@ -17,10 +17,11 @@ _Building the right thing_
 
 ## Schedule
 
-1. Why event storming? - 5 min
-1. Big picture - 10 mins
-1. Process level - 10 mins
-1. Design-level - 5 mins
+1. The problem - 10 minutes
+1. Why event storming - 5 minutes
+1. Big picture - 5 minutes
+1. Process level - 3 mins
+1. Design-level - 2 mins
 
 ---
 
@@ -91,6 +92,17 @@ Better than before, but more missed deadlines, overtime, again unhappy customers
 
 ---
 
+<!-- _footer: ""-->
+![bg ](./images/holiday-champagne.jpg)
+
+<!-- 
+
+Awesome? Nope.
+
+-->
+
+---
+
 <!-- _footer: "" -->
 ![bg ](./images/what-now.jpg)
 
@@ -107,16 +119,7 @@ communication across departments exploded.
 
 Dependencies from other departments started becoming show-stoppers.
 
--->
-
----
-
-<!-- _footer: ""-->
-![bg ](./images/holiday-champagne.jpg)
-
-<!-- 
-
-Awesome? Nope.
+No visibility -> chaos
 
 -->
 
