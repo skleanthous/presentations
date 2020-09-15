@@ -4,10 +4,9 @@ Building software which meets the requirements of the business has been and stil
 
 Event storming is a workshop which helps everyone in the product-building team to reach a shared understanding of the domain, but also helps us establish what needs to be built and how, by creating a model of the software in a format which is verifiable by our subject matter experts. At the same time, Event Storming can help us discover our inherent service boundaries, which is the biggest source of risk in a microservices architecture.
 
-In this talk Savvas will:
+In this talk Savvas will go through a short history of dysfunctional processes, before explaining how Event Storming addresses them. By the end of the talk you should know:
 
-- Give an introduction to Event Storming and its three major levels: Big-picture, Process level, and Software design level
-- How to run each level of Event Storming
-- Who should get involved in each session
-- What are the expected outcomes of each level
-- How to use Event Storming outcomes in architecture, and in establishing service boundaries
+- What problems does Event Storming solve
+- What are the different types of event storming
+- Who should be involved in each one
+- What is the expected outcome of each level
