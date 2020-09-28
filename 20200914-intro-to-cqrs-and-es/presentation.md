@@ -90,7 +90,7 @@ Event sourcing:
 <!-- _header: "Event Sourcing - what it is and isn't" -->
 # Event sourcing best tips #1
 
-> Modernizing from monolith with single normal form db directly to event-driven microservices with event sourcing, without prior experience, is something that you want to rethink
+> Adopting event-driven microservices with event sourcing, starting with your core services first, without any prior experience, is something that you want to rethink
 
 <p style="text-align:right;"><img src="./images/mugshot-small.png" height="160" alt="My picture"/><br>Savvas Kleanthous<br>2 days ago</p>
 
