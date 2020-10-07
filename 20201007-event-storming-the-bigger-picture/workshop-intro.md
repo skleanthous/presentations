@@ -26,5 +26,5 @@ The things you need to know before joining this session are:
 1. The shipper is the one who the carrier collects from, and the recipient is the one the carrier is delivering to
 1. One shipment may have one or more tracking numbers
 1. We provide the tracking number to the carrier and the carrier responds with a list of scans through an API
-1. Scans are a piece of text along with a time, which describes something that happened to the shipment at the time
+1. Scans are a piece of text along with a time and a status code, which describes something that happened to the shipment at the time
 1. We need to pull scans ahead of someone tracking a shipment because of carrier API quota and time limits, and because we want to be proactive in informing our customers of issues
