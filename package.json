@@ -4,12 +4,14 @@
   "description": "[Presentations page](https://skleanthous.github.io/presentations/)",
   "main": "engine.js",
   "dependencies": {
-    "@marp-team/marp-cli": "^0.21.0",
+    "@marp-team/marp-cli": "^0.21.1",
     "markdown-it-mark": "^3.0.0",
     "markdown-it-multimd-table": "^4.0.3",
     "markdown-it-plantuml": "^1.4.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "markdown-it": "^12.0.2"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
