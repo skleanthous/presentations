@@ -12,7 +12,7 @@ export declare const TextMacrosMethods: {
     Space(parser: TextParser, _c: string): void;
     SelfQuote(parser: TextParser, name: string): void;
     Insert(parser: TextParser, _name: string, c: string): void;
-    Accent(parser: TextParser, _name: string, c: string): void;
+    Accent(parser: TextParser, name: string, c: string): void;
     Emph(parser: TextParser, name: string): void;
     SetFont(parser: TextParser, _name: string, variant: string): void;
     SetSize(parser: TextParser, _name: string, size: number): void;

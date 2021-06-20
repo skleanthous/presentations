@@ -1,5 +1,5 @@
 // @flow
-import defineFunction from "../defineFunction";
+import defineFunction, {normalizeArgument} from "../defineFunction";
 import buildCommon from "../buildCommon";
 import mathMLTree from "../mathMLTree";
 import utils from "../utils";
@@ -218,7 +218,7 @@ defineFunction({
         numArgs: 1,
     },
     handler: (context, args) => {
-        const base = args[0];
+        const base = normalizeArgument(args[0]);
 
         const isStretchy = !NON_STRETCHY_ACCENT_REGEX.test(context.funcName);
         const isShifty = !isStretchy ||
@@ -249,14 +249,22 @@ defineFunction({
     props: {
         numArgs: 1,
         allowedInText: true,
-        allowedInMath: false,
+        allowedInMath: true, // unless in strict mode
+        argTypes: ["primitive"],
     },
     handler: (context, args) => {
         const base = args[0];
+        let mode = context.parser.mode;
+
+        if (mode === "math") {
+            context.parser.settings.reportNonstrict("mathVsTextAccents",
+                `LaTeX's accent ${context.funcName} works only in text mode`);
+            mode = "text";
+        }
 
         return {
             type: "accent",
-            mode: context.parser.mode,
+            mode: mode,
             label: context.funcName,
             isStretchy: false,
             isShifty: true,

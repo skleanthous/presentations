@@ -7,7 +7,7 @@ var SRELIB = (typeof window === 'undefined' ? './a11y/sre-node.js' :
 var srePromise = (typeof sre === 'undefined' ? AsyncLoad_js_1.asyncLoad(SRELIB) : Promise.resolve());
 var SRE_DELAY = 100;
 var SRE_TIMEOUT = 20 * 1000;
-exports.sreReady = function () {
+var sreReady = function () {
     return new Promise(function (resolve, reject) {
         srePromise.then(function () {
             var start = new Date().getTime();
@@ -28,4 +28,5 @@ exports.sreReady = function () {
         }).catch(function (error) { return reject(error.message || error); });
     });
 };
+exports.sreReady = sreReady;
 //# sourceMappingURL=sre.js.map

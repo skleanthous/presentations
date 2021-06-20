@@ -188,7 +188,8 @@ const buildString = (
         a11yStrings.length > 0 &&
         // TODO(kevinb): check that the last item in a11yStrings is a string
         // I think we might be able to drop the nested arrays, which would make
-        // this easier to type - $FlowFixMe
+        // this easier to type
+        // $FlowFixMe
         /^\d+$/.test(a11yStrings[a11yStrings.length - 1])
     ) {
         a11yStrings[a11yStrings.length - 1] += ret;
@@ -323,6 +324,11 @@ const handleObject = (
                     regionStrings.push("end binomial");
                 }
             });
+            break;
+        }
+
+        case "hbox": {
+            buildA11yStrings(tree.body, a11yStrings, atomType);
             break;
         }
 
@@ -533,9 +539,21 @@ const handleObject = (
                     regionStrings.push("end strikeout");
                 });
                 break;
+            } else if (/phase/.test(tree.label)) {
+                buildRegion(a11yStrings, function(regionStrings) {
+                    regionStrings.push("start phase angle");
+                    buildA11yStrings(tree.body, regionStrings, atomType);
+                    regionStrings.push("end phase angle");
+                });
+                break;
             }
             throw new Error(
                 `KaTeX-a11y: enclose node with ${tree.label} not supported yet`);
+        }
+
+        case "vcenter": {
+            buildA11yStrings(tree.body, a11yStrings, atomType);
+            break;
         }
 
         case "vphantom": {
@@ -629,6 +647,14 @@ const handleObject = (
             throw new Error("KaTeX-a11y: xArrow not implemented yet");
         }
 
+        case "cdlabel": {
+            throw new Error("KaTeX-a11y: cdlabel not implemented yet");
+        }
+
+        case "cdlabelparent": {
+            throw new Error("KaTeX-a11y: cdlabelparent not implemented yet");
+        }
+
         case "mclass": {
             // \neq and \ne are macros so we let "htmlmathml" render the mathmal
             // side of things and extract the text from that.
@@ -702,7 +728,10 @@ const flatten = function(array) {
     return result;
 };
 
-const renderA11yString = function(text: string, settings?: SettingsOptions) {
+const renderA11yString = function(
+    text: string,
+    settings?: SettingsOptions,
+): string {
 
     const tree = katex.__parse(text, settings);
     const a11yStrings = buildA11yStrings(tree, [], "normal");

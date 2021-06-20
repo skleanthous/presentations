@@ -18,6 +18,8 @@ export interface MathJaxConfig extends MJConfig {
         typeset?: boolean;
         ready?: () => void;
         pageReady?: () => void;
+        invalidOption?: 'fatal' | 'warn';
+        optionError?: (message: string, key: string) => void;
         [name: string]: any;
     };
 }
@@ -110,4 +112,6 @@ export declare const CONFIG: {
     typeset?: boolean;
     ready?: () => void;
     pageReady?: () => void;
+    invalidOption?: 'fatal' | 'warn';
+    optionError?: (message: string, key: string) => void;
 };

@@ -26,9 +26,10 @@ var __read = (this && this.__read) || function (o, n) {
     }
     return ar;
 };
-var __spread = (this && this.__spread) || function () {
-    for (var ar = [], i = 0; i < arguments.length; i++) ar = ar.concat(__read(arguments[i]));
-    return ar;
+var __spreadArray = (this && this.__spreadArray) || function (to, from) {
+    for (var i = 0, il = from.length, j = to.length; i < il; i++, j++)
+        to[j] = from[i];
+    return to;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Styles = void 0;
@@ -123,7 +124,7 @@ function splitSame(name) {
 }
 function combineSame(name) {
     var e_4, _a;
-    var children = __spread(Styles.connect[name].children);
+    var children = __spreadArray([], __read(Styles.connect[name].children));
     var value = this.styles[this.childName(name, children.shift())];
     try {
         for (var children_2 = __values(children), children_2_1 = children_2.next(); !children_2_1.done; children_2_1 = children_2.next()) {

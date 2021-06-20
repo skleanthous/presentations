@@ -25,6 +25,7 @@ BOLDVARIANT[TexConstants_js_1.TexConstant.Variant.SCRIPT] = TexConstants_js_1.Te
 BOLDVARIANT[TexConstants_js_1.TexConstant.Variant.SANSSERIF] = TexConstants_js_1.TexConstant.Variant.BOLDSANSSERIF;
 BOLDVARIANT['-tex-calligraphic'] = '-tex-bold-calligraphic';
 BOLDVARIANT['-tex-oldstyle'] = '-tex-bold-oldstyle';
+BOLDVARIANT['-tex-mathit'] = TexConstants_js_1.TexConstant.Variant.BOLDITALIC;
 exports.BoldsymbolMethods = {};
 exports.BoldsymbolMethods.Boldsymbol = function (parser, name) {
     var boldsymbol = parser.stack.env['boldsymbol'];

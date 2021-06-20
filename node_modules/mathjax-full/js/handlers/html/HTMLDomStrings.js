@@ -85,6 +85,10 @@ var HTMLDomStrings = (function () {
         }
         return [next, ignore];
     };
+    HTMLDomStrings.prototype.handleOther = function (node, _ignore) {
+        this.pushString();
+        return this.adaptor.next(node);
+    };
     HTMLDomStrings.prototype.find = function (node) {
         var _a, _b;
         this.init();
@@ -92,14 +96,18 @@ var HTMLDomStrings = (function () {
         var ignore = false;
         var include = this.options['includeHtmlTags'];
         while (node && node !== stop) {
-            if (this.adaptor.kind(node) === '#text') {
+            var kind = this.adaptor.kind(node);
+            if (kind === '#text') {
                 node = this.handleText(node, ignore);
             }
-            else if (include[this.adaptor.kind(node)] !== undefined) {
+            else if (include.hasOwnProperty(kind)) {
                 node = this.handleTag(node, ignore);
             }
-            else {
+            else if (kind) {
                 _a = __read(this.handleContainer(node, ignore), 2), node = _a[0], ignore = _a[1];
+            }
+            else {
+                node = this.handleOther(node, ignore);
             }
             if (!node && this.stack.length) {
                 this.pushString();

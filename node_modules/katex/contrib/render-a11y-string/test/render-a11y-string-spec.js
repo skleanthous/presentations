@@ -151,6 +151,15 @@ describe("renderA11yString", () => {
         });
     });
 
+    describe("phase", () => {
+        test("\\phase", () => {
+            const result = renderA11yString("\\phase{a}");
+            expect(result).toMatchInlineSnapshot(
+                `"start phase angle, a, end phase angle"`,
+            );
+        });
+    });
+
     describe("exponents", () => {
         test("simple exponent", () => {
             const result = renderA11yString("e^x");
@@ -260,6 +269,13 @@ describe("renderA11yString", () => {
             expect(result).toMatchInlineSnapshot(
                 `"start fraction, a, divided by, b, end fraction"`,
             );
+        });
+    });
+
+    describe("hbox", () => {
+        test("\\hbox", () => {
+            const result = renderA11yString("x+\\hbox{y}");
+            expect(result).toMatchInlineSnapshot(`"x, plus, y"`);
         });
     });
 
@@ -512,6 +528,13 @@ describe("renderA11yString", () => {
             expect(result).toMatchInlineSnapshot(
                 `"start underline, 1, plus, 2, end underline"`,
             );
+        });
+    });
+
+    describe("vcenter", () => {
+        test("\\vcenter", () => {
+            const result = renderA11yString("x+\\vcenter{y}");
+            expect(result).toMatchInlineSnapshot(`"x, plus, y"`);
         });
     });
 

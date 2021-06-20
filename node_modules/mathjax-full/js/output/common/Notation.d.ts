@@ -5,9 +5,10 @@ export declare const THICKNESS = 0.067;
 export declare const PADDING = 0.2;
 export declare const SOLID: string;
 export declare type Menclose = CommonMenclose<any, any, any>;
+export declare type PaddingData = [number, number, number, number];
 export declare type Renderer<W extends AnyWrapper, N> = (node: W, child: N) => void;
-export declare type BBoxExtender<W extends AnyWrapper> = (node: W) => number[];
-export declare type BBoxBorder<W extends AnyWrapper> = (node: W) => number[];
+export declare type BBoxExtender<W extends AnyWrapper> = (node: W) => PaddingData;
+export declare type BBoxBorder<W extends AnyWrapper> = (node: W) => PaddingData;
 export declare type Initializer<W extends AnyWrapper> = (node: W) => void;
 export declare type NotationDef<W extends AnyWrapper, N> = {
     renderer: Renderer<W, N>;
@@ -35,8 +36,8 @@ export declare const fullBBox: BBoxExtender<Menclose>;
 export declare const fullPadding: BBoxExtender<Menclose>;
 export declare const fullBorder: BBoxBorder<Menclose>;
 export declare const arrowHead: (node: Menclose) => number;
-export declare const arrowBBoxHD: (node: Menclose, TRBL: number[]) => number[];
-export declare const arrowBBoxW: (node: Menclose, TRBL: number[]) => number[];
+export declare const arrowBBoxHD: (node: Menclose, TRBL: PaddingData) => PaddingData;
+export declare const arrowBBoxW: (node: Menclose, TRBL: PaddingData) => PaddingData;
 export declare const arrowDef: {
     [name: string]: [number, boolean, boolean, string];
 };

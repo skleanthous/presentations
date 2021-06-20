@@ -220,7 +220,7 @@ var compareSequents = function (top, bottom) {
     var dr = tr - br;
     return [dl, dr];
 };
-exports.balanceRules = function (arg) {
+var balanceRules = function (arg) {
     var e_1, _a;
     item = new arg.document.options.MathItem('', null, arg.math.display);
     var config = arg.data;
@@ -281,20 +281,24 @@ exports.balanceRules = function (arg) {
         finally { if (e_1) throw e_1.error; }
     }
 };
+exports.balanceRules = balanceRules;
 var property_prefix = 'bspr_';
 var blacklistedProperties = (_a = {},
     _a[property_prefix + 'maxAdjust'] = true,
     _a);
-exports.setProperty = function (node, property, value) {
+var setProperty = function (node, property, value) {
     NodeUtil_js_1.default.setProperty(node, property_prefix + property, value);
 };
-exports.getProperty = function (node, property) {
+exports.setProperty = setProperty;
+var getProperty = function (node, property) {
     return NodeUtil_js_1.default.getProperty(node, property_prefix + property);
 };
-exports.removeProperty = function (node, property) {
+exports.getProperty = getProperty;
+var removeProperty = function (node, property) {
     node.removeProperty(property_prefix + property);
 };
-exports.makeBsprAttributes = function (arg) {
+exports.removeProperty = removeProperty;
+var makeBsprAttributes = function (arg) {
     arg.data.root.walkTree(function (mml, _data) {
         var attr = [];
         mml.getPropertyNames().forEach(function (x) {
@@ -307,13 +311,16 @@ exports.makeBsprAttributes = function (arg) {
         }
     });
 };
-exports.saveDocument = function (arg) {
+exports.makeBsprAttributes = makeBsprAttributes;
+var saveDocument = function (arg) {
     doc = arg.document;
     if (!('getBBox' in doc.outputJax)) {
         throw Error('The bussproofs extension requires an output jax with a getBBox() method');
     }
 };
-exports.clearDocument = function (_arg) {
+exports.saveDocument = saveDocument;
+var clearDocument = function (_arg) {
     doc = null;
 };
+exports.clearDocument = clearDocument;
 //# sourceMappingURL=BussproofsUtil.js.map

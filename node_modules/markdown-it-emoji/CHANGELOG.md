@@ -1,3 +1,14 @@
+2.0.0 / 2020-10-15
+------------------
+
+- Update emojis db.
+- Added `bare.js` with zero config.
+- istanbul => nyc
+- browserify => rollup.js
+- Dev deps bump & cleanup.
+- Configs cleanup
+
+
 1.4.0 / 2017-06-20
 ------------------
 

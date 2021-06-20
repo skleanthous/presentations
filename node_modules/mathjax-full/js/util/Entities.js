@@ -409,7 +409,10 @@ exports.entities = {
     xi: '\u03BE',
     yen: '\u00A5',
     zeta: '\u03B6',
-    zigrarr: '\u21DD'
+    zigrarr: '\u21DD',
+    nbsp: '\u00A0',
+    rsquo: '\u2019',
+    lsquo: '\u2018'
 };
 var loaded = {};
 function add(additions, file) {

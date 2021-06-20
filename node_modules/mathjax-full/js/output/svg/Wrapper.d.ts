@@ -24,6 +24,8 @@ export declare class SVGWrapper<N, T, D> extends CommonWrapper<SVG<N, T, D>, SVG
     protected handleColor(): void;
     protected handleAttributes(): void;
     place(x: number, y: number, element?: N): void;
+    protected handleId(y: number): number;
+    firstChild(): N;
     placeChar(n: number, x: number, y: number, parent: N, variant?: string): number;
     protected charNode(variant: string, C: string, path: string): N;
     protected pathNode(C: string, path: string): N;

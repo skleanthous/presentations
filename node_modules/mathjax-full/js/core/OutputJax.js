@@ -23,6 +23,12 @@ var AbstractOutputJax = (function () {
     };
     AbstractOutputJax.prototype.initialize = function () {
     };
+    AbstractOutputJax.prototype.reset = function () {
+        var _args = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            _args[_i] = arguments[_i];
+        }
+    };
     AbstractOutputJax.prototype.getMetrics = function (_document) {
     };
     AbstractOutputJax.prototype.styleSheet = function (_document) {

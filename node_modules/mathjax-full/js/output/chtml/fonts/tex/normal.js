@@ -58,7 +58,7 @@ exports.normal = FontData_js_1.AddCSS(normal_js_1.normal, {
     0x210D: { c: 'H', f: 'A' },
     0x210E: { c: 'h', f: 'I' },
     0x210F: { f: 'A' },
-    0x2110: { c: 'J', f: 'SC' },
+    0x2110: { c: 'I', f: 'SC' },
     0x2111: { c: 'I', f: 'FR' },
     0x2112: { c: 'L', f: 'SC' },
     0x2115: { c: 'N', f: 'A' },

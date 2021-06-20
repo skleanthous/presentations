@@ -15,13 +15,38 @@ footer: An introduction to toc - @skleanthous
 
 # Becoming a floor manager at a jam workshop
 
+- You just got kidnapped by a strawberry jam company and you are assigned as the floor manager
+- This infamous jam company expects you to optimize their jam creation process
+- They need to be able to deal with a 10x increase in jam demand
+
 ---
 
-# Is optimizing jam production that different than optimizing a software workflow \ deployment pipeline \ value chain \ another process people have to follow?
+<!-- _class: lead invert -->
+
+# Where would you even start?
 
 ---
 
-# No.
+## Is it really the same to optimize:
+
+- A car manufacturing plant pipeline
+- Jam production
+- Software pipeline that processes some data
+- Processing a loan application (takes multiple people)
+
+---
+
+<!-- _class: lead invert -->
+# YES!
+
+---
+
+<!-- _class: lead invert -->
+## ...and to do this (optimize workflows/pipelines) we use the "Theory of Constraints"
+
+---
+
+(which is a theory in the same way as the theory of gravity)
 
 ---
 

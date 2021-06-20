@@ -28,6 +28,12 @@ var AbstractInputJax = (function () {
     };
     AbstractInputJax.prototype.initialize = function () {
     };
+    AbstractInputJax.prototype.reset = function () {
+        var _args = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            _args[_i] = arguments[_i];
+        }
+    };
     Object.defineProperty(AbstractInputJax.prototype, "processStrings", {
         get: function () {
             return true;

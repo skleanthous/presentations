@@ -96,7 +96,7 @@ exports.TextMacrosMethods = {
     Insert: function (parser, _name, c) {
         parser.text += c;
     },
-    Accent: function (parser, _name, c) {
+    Accent: function (parser, name, c) {
         var base = parser.ParseArg(name);
         var accent = parser.create('token', 'mo', {}, c);
         parser.addAttributes(accent);

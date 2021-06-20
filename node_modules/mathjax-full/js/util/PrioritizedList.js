@@ -33,9 +33,6 @@ var PrioritizedList = (function () {
             this.items.splice(i, 1);
         }
     };
-    PrioritizedList.prototype.toArray = function () {
-        return Array.from(this);
-    };
     PrioritizedList.DEFAULTPRIORITY = 5;
     return PrioritizedList;
 }());

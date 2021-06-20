@@ -1,11 +1,11 @@
-import { SVGWrapper } from '../Wrapper.js';
+import { SVGWrapper, SVGConstructor } from '../Wrapper.js';
 import { SVGWrapperFactory } from '../WrapperFactory.js';
 import { SVGmtr } from './mtr.js';
 import { SVGmtd } from './mtd.js';
 import { MmlNode } from '../../../core/MmlTree/MmlNode.js';
 import { OptionList } from '../../../util/Options.js';
 import { StyleList } from '../../../util/StyleList.js';
-declare const SVGmtable_base: import("../Wrapper.js").Constructor<import("../../common/Wrappers/mtable.js").CommonMtable<SVGmtd<any, any, any>, SVGmtr<any, any, any>>> & import("../Wrapper.js").Constructor<SVGWrapper<any, any, any>>;
+declare const SVGmtable_base: import("../../common/Wrappers/mtable.js").MtableConstructor<SVGmtd<any, any, any>, SVGmtr<any, any, any>> & SVGConstructor<any, any, any>;
 export declare class SVGmtable<N, T, D> extends SVGmtable_base {
     static kind: string;
     static styles: StyleList;
