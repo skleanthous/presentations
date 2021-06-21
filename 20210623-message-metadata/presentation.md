@@ -51,6 +51,8 @@ Metadata are NOT supposed to carry data needed for core or supportive domains - 
 
 ---
 
+<!-- _class: lead  -->
+
 1. Message name
 1. Message version
 1. Message id
@@ -58,6 +60,8 @@ Metadata are NOT supposed to carry data needed for core or supportive domains - 
 1. Causation id
 
 ---
+
+<!-- _class: lead -->
 
 1. BC\service that owns contract
 1. UTC timestamp
