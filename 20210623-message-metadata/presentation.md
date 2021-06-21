@@ -47,13 +47,34 @@ Metadata are NOT supposed to carry data needed for core or supportive domains - 
 
 <!-- _class: lead invert -->
 
+# Opinion: _minimum_ set of metadata
+
+---
+
+1. Message name
+1. Message version
+1. Message id
+1. Correlation id
+1. Causation id
+
+---
+
+1. BC\service that owns contract
+1. UTC timestamp
+1. Auth token
+1. Entity version (expected for commands, source for events)
+1. Source entity
+
+---
+<!-- _class: lead invert -->
+
 # Sample use-cases
 
 ---
 
 # 1. Understand what your system does \ did in response to a request
 
-1. Filter events on type and resource
+1. Filter based on message name
 1. Take random sample
 1. Get all events that have the same correlation id as sample
 
