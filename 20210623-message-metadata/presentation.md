@@ -102,7 +102,19 @@ Metadata are NOT supposed to carry data needed for core or supportive domains - 
 ---
 
 <!-- _class: lead -->
-# 1. We need them to fix problems
+
+# 1. We don't polute our data with unecessary info
+
+Implicit information is necessary, but sometimes it needs to stay implicit.
+
+<!--
+Thinking back on the previous, real-life example, should the order form include information about what number to call to fulfill the order? Should it include Farid's name? The fulfillment department (isn't it implicit)?
+-->
+
+---
+
+<!-- _class: lead -->
+# 2. We need them to fix problems
 
 Which is **very** difficult at scale
 
@@ -125,7 +137,7 @@ At the same time:
 
 <!-- _class: lead -->
 
-# 2. Understanding / discovering implicit behaviour
+# 3. Understanding / discovering implicit behaviour
 
 <!-- 
 Complex systems are complex. Cause-and-effect is lost. Metadata can help us understand what really happens in our systems
