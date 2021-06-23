@@ -1,7 +1,8 @@
 ---
 marp: true
 theme: gaia
-paginate: false
+paginate: true
+_paginate: false
 _footer: ""
 footer: Ignore metadata at your own peril - @skleanthous
 ---
@@ -26,9 +27,15 @@ h1,h2,h3 {
 
 ---
 
+<!-- _class: lead invert -->
+
+# An attempt at a _practical_ definition
+
+---
+
 <!-- _class: lead -->
 
-# Metadata are data useful for cross-cutting concerns and observability
+# Metadata are data that are useful for cross-cutting concerns and observability
 
 <!-- 
 
@@ -47,86 +54,113 @@ Metadata are NOT supposed to carry data needed for core or supportive domains - 
 
 <!-- _class: lead invert -->
 
-# Opinion: _minimum_ set of metadata
+# Metadata in real life
 
 ---
 
 <!-- _class: lead  -->
+## Example: Pre-computing phone sales
 
-1. Message name
-1. Message version
-1. Message id
-1. Correlation id
-1. Causation id
+<!-- 
+- Customer calls sales
+- Sally (from sales picks up) and takes the order
+- Sally calls fulfillment
+- Farid (from fulfillment) picks up
+- Sally tells Farid to ship X items to Y location using Z service 
+-->
+---
+
+## Did you spot the metadata?
+
+- Fulfillment departments phone number (routing)
+- Sally requesting a shipment (command type)
+
+---
+
+## More metadata!
+
+(sometimes metadata are not obvious)
+
+- Sally (source)
+- Farid (receipient)
+
+---
+
+## Even more metadata!
+
+(sometimes metadata are REALLY not obvious)
+
+- Farid knowing who Sally is (auth)
+- Time of the call request
+
+---
+
+<!-- _class: lead invert -->
+
+# Why are metadata important?
+
+---
+
+<!-- _class: lead -->
+# 1. We need them to fix problems
+
+Which is **very** difficult at scale
+
+<!-- 
+
+Something goes wrong:
+- Who placed the order?
+- Who received the request to ship?
+- When?
+etc.
+
+At the same time:
+- Manual inspection is impossible
+- Software doesn't have enough "smarts" to discover and fix
+- Too many things happen
+- Too much implicit info
+-->
 
 ---
 
 <!-- _class: lead -->
 
-1. BC\service that owns contract
-1. UTC timestamp
-1. Auth token
-1. Entity version (expected for commands, source for events)
-1. Source entity
+# 2. Understanding / discovering implicit behaviour
 
----
-<!-- _class: lead invert -->
+<!-- 
+Complex systems are complex. Cause-and-effect is lost. Metadata can help us understand what really happens in our systems
+-->
 
-# Sample use-cases
 
----
+<!-- 
 
-# 1. Understand what your system does \ did in response to a request
+Sample uses of metadata:
+1. Understand what your system does \ did in response to a request
+1. Debug an exception
+1. Advanced concurrency
+1. Discovering domain
+    - How often a user does something
+    - Find functionality that is used in quick succession by same user
+    - Discover common causes for a particular event
 
+
+Understanding what happens:
 1. Filter based on message name
 1. Take random sample
 1. Get all events that have the same correlation id as sample
 
----
-
-# 2. Debug an exception
-
+Debug exceptions
 1. Get all error events of specified error type (filtering on resource)
 1. Take random sample
 1. Get all events that have the same correlation id as sample
 1. Use event id and causation id to create causal chain
 1. Use resource name and version and incoming message to replay what happened in prod
+All of these can be fully automated and can result in being able to run locally with right versions, remote data, debugger attached...
 
-<!--
-
-All of these can be fully automated and can result in being able to run locally with:
-
-- the right version of code
-- the same command
-- the same data
-- with debugger attached to local process able to step though line-by-line
-
+Advanced concurrency:
+1. Expected version (instead of hash-etag)
+1. Check newer events and confirm they're compatible
 -->
----
-
-# 3. Advanced concurrency
-
-1. Load events newer than expected version number
-1. Decide based on message type if message can still be processed considering the new events
-
----
-
-# 4. Discovering domain
-
-- How often a user does something
-- Find functionality that is used in quick succession by same user
-- Discover common causes for a particular event
-
-<!-- 
-
-1. Get all events of type -> group per user -> count
-
-2. Get all events of a type -> group by user id and day & hour -> count
-
-3. Get samples of a particular event, build causal chains, compaere event types before and compare
-
--->
-
 ---
 
 <!-- header: "" -->
