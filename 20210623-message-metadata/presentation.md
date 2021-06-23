@@ -105,7 +105,7 @@ Metadata are NOT supposed to carry data needed for core or supportive domains - 
 
 # 1. We don't polute our data with unecessary info
 
-Implicit information is necessary, but sometimes it needs to stay implicit.
+Implicit information must become explicit, but not everyone is interested
 
 <!--
 Thinking back on the previous, real-life example, should the order form include information about what number to call to fulfill the order? Should it include Farid's name? The fulfillment department (isn't it implicit)?
