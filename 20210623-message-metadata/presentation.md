@@ -35,7 +35,7 @@ h1,h2,h3 {
 
 <!-- _class: lead -->
 
-# Metadata are data that are useful for cross-cutting concerns and observability
+# Metadata are data that are useful in infrastructure, cross-cutting concerns, and observability
 
 <!-- 
 
