@@ -13,6 +13,7 @@
 - DDD Vienna & Microservices, Reactive, and Distributed Systems Vienna 30th November 2020: [An intro to arc42](https://skleanthous.github.io/presentations/20201130-an-intro-to-arc42/presentation.html). The slides are the same, but there are minor changes in the comments.
 - In-house 21st of January 2021: [A crash-course on theory of constraints](https://skleanthous.github.io/presentations/20210121-a-crash-course-on-toc/presentation.html)
 - DDD EU Open Space, 24-25 June 2021: [Ignore metadata on your own peril](https://skleanthous.github.io/presentations/20210623-message-metadata/presentation.html)
+- Naked Wines, 4th October 2021: [Event storming workshop intro](https://skleanthous.github.io/presentations/20211004-es-workshop-intro/presentation.html)
 
 ## How to build them
 
