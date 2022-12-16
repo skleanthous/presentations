@@ -160,7 +160,6 @@ By discovering conflicts and inconsistencies, and discussing and solving them, w
 > # A few hours of modeling can save you months of development and frustration
 
 ---
-
 <!-- _class: lead invert -->
 <!-- _footer: "" -->
 <!-- _paginate: false -->
