@@ -22,6 +22,7 @@ A quick introduction and some guidelines
 
 - The what and why of Event Storming
 - Guidelines to the event storming workshop
+- What are domain events
 
 ---
 <!-- _header: "What and why 1/4" -->
@@ -144,19 +145,46 @@ By discovering conflicts and inconsistencies, and discussing and solving them, w
 
 ---
 
-<!-- class: lead invert -->
-<!-- footer: "" -->
-<!-- paginate: false -->
+<!-- _class: lead invert -->
+<!-- _footer: "" -->
+<!-- _paginate: false -->
 
 > # Months of development and frustration can save you a few hours of modeling
 
 ---
 
-<!-- class: lead invert -->
-<!-- footer: "" -->
-<!-- paginate: false -->
+<!-- _class: lead invert -->
+<!-- _footer: "" -->
+<!-- _paginate: false -->
 
 > # A few hours of modeling can save you months of development and frustration
+
+---
+<!-- _class: lead invert -->
+<!-- _footer: "" -->
+<!-- _paginate: false -->
+
+# Domain events
+
+---
+
+# Domain events
+
+- Orange stickies
+- Past tense
+- They can be many things, but always important to the domain (and domain expert)
+
+<!--
+
+Domain events may be:
+  - State changes
+  - Important occurances
+  - Any important things that happen in your system
+  - not technical
+  - Don't think messages going over a message bus
+
+  - BUT: if you're not sure, better record it,
+-->
 
 ---
 <!-- _class: lead invert -->
