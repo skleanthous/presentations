@@ -14,6 +14,7 @@
 - In-house 21st of January 2021: [A crash-course on theory of constraints](https://skleanthous.github.io/presentations/20210121-a-crash-course-on-toc/presentation.html)
 - DDD EU Open Space, 24-25 June 2021: [Ignore metadata on your own peril](https://skleanthous.github.io/presentations/20210623-message-metadata/presentation.html)
 - Naked Wines, 4th October 2021: [Event storming workshop intro](https://skleanthous.github.io/presentations/20211004-es-workshop-intro/presentation.html)
+- DDD Athens, 22nd December 2022: [System Decomposition: The hard truths](https://skleanthous.github.io/presentations/20221222-system-decomposition-the-hard-truths/presentation.html)
 
 ## How to build them
 
