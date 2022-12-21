@@ -253,7 +253,7 @@ Similarly, I don't believe what I have here is perfect, but I hope it's useful. 
 - A highly uncoupled system can be very difficult to understand
 - ...and anything in between
 
-(but they are not entirely independent)
+(but they are not entirely independent) 
 
 <!--
 Actually, forcefully lowering coupling can enforce a minimum complexity on a system. It doesn't mean we can calculate complexity from coupling though, so we're safe to continue and assume they're orthogonal for the purposes of the following.
