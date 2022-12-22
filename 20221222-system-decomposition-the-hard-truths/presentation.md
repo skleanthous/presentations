@@ -4,18 +4,21 @@ theme: gaia
 paginate: true
 _paginate: false
 _footer: ""
-footer: System decomposition: the hard truths
+footer: System decomposition: A how to
 ---
 
 <!-- _class: lead invert -->
+<!-- _footer: "" -->
+<!-- _paginate: false -->
 
 # System decomposition: a how-to
-
 ## Or: tearing it down and building it up again
 
 ---
 
 <!-- _class: lead invert -->
+<!-- _footer: "" -->
+<!-- _paginate: false -->
 
 # THIS IS A WORK IN PROGRESS
 
@@ -32,6 +35,8 @@ footer: System decomposition: the hard truths
 ---
 
 <!-- _class: lead invert -->
+<!-- _footer: "" -->
+<!-- _paginate: false -->
 
 # Section 1: Tearing it all down
 
@@ -158,17 +163,20 @@ My opinion: A huge contributing factor to the above is that software engineering
 -->
 
 ---
+<!-- _footer: "" -->
 
 ![](images/rant-architecture.jpg)
 
 ---
+
+<!-- _footer: "" -->
 
 ![](images/rant-ddd.jpg)
 
 ---
 <!-- _class: lead -->
 
-I'm being just half-serious
+I'm only half joking
 
 <!-- 
 
@@ -179,6 +187,8 @@ I believe the above, but I want to emphasize that there is tremendous value in t
 ---
 
 <!-- _class: lead -->
+<!-- _footer: "" -->
+<!-- _paginate: false -->
 
 > ## Can someone _please_ point me to some hands-on guidelines to build an architecture??
 
@@ -189,12 +199,15 @@ Me, some years ago.
 
 <!-- _class: lead invert -->
 <!-- _footer: "" -->
+<!-- _paginate: false -->
 
 # Section two: building it up again
 
 ---
 
 <!-- _class: lead -->
+<!-- _footer: "" -->
+<!-- _paginate: false -->
 
 # There are some maths involved
 
@@ -405,13 +418,18 @@ $$ TCoA =\sum_{α=α1}^{Α} ( LCoupC(α) + LComplC(α))$$
 (thank you)
 
 ---
+<!-- _class: lead -->
+<!-- _footer: "" -->
+<!-- _paginate: false -->
 
-# (your) rant: "Weren't you the one ranting about too much theory not enough practical advice?"
+# Your rant (probably):
+## "Weren't you the one ranting about too much theory not enough practical advice?"
 
 ---
 
 <!-- _class: lead invert -->
 <!-- _footer: "" -->
+<!-- _paginate: false -->
 
 # Part 3: Building a process \ framework
 
@@ -432,7 +450,7 @@ $$ TCoA =\sum_{α=α1}^{Α} ( LCoupC(α) + LComplC(α))$$
 1. Encapsulate things that change together
 1. Group larger parts that make consistent changes on the same entities
 
---- 
+---
 
 # Step 1: Start with a big picture
 
@@ -465,10 +483,10 @@ Strategic DDD is here
 
 # Step 3: Model workflow implementation
 
-- Take the workflows you have created and model their implementation
+- Model implementation
 - Clearly flag repeated steps
   - Discover repetitions _across_ implementations
-- Discover usage of data:
+- Indicate usage of data:
   - Indicate need for consistent changes
   - Indicate acceptance of staleness
 
@@ -539,9 +557,14 @@ I call these platform concerns, but they may not be infrastructure related. Thes
 ---
 
 <!-- _class: lead -->
+<!-- _footer: "" -->
+<!-- _paginate: false -->
+
 # Why the math?
 
 ---
+<!-- _footer: "" -->
+<!-- _paginate: false -->
 
 | Rule | Why |
 |---|---|
