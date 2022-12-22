@@ -224,7 +224,7 @@ I hope it will help at the end
 
 ---
 
-# Basic premise: maybe not true, but useful
+# Basic premise: useful
 
 Let's take gravity:
 
