@@ -41,12 +41,8 @@ footer: System decomposition: the hard truths
 
 My problem with info about software architecture:
 
-- I can find what not to do, what good looks like and patterns, but _I want a process to follow_!
+- No practical guidelines!
 - Architectural decisions are hard to change:
-
-> Architecture represents the significant design decisions that shape a system, where significant is measured by cost of change.
-
- Grady Booch 
 
 
 <!--
@@ -64,6 +60,15 @@ My problem with info about software architecture:
 
 ---
 
+<!-- _class: lead -->
+
+## "Architecture represents the significant design decisions that shape a system, where significant is measured by cost of change."
+
+ Grady Booch 
+
+
+
+---
 # The reductionist view of architecture
 
 Architecture is about:
@@ -71,8 +76,7 @@ Architecture is about:
 - Coupling *
 - Complexity
 
-*: Not just of software, but across people, teams, systems etc.
-*: Also, note that there are multiple forms and strengths of coupling.
+*: Multiple types and it includes teams, SME's, processes, external systems etc.
 
 <!--
 I spostulate that all other factors and effects are an outcome of these two things applying at different levels and parts of the system.
@@ -102,9 +106,9 @@ Feedback loops are how systems interact. Systems on all levels simultaneously.
 - Services
 - Sub-systems
 - Software systems and external systems
-- Including users
-- Including developers
-- Including business people and SME's
+- Users
+- Developers
+- Business people and SME's
 - And competitors!
 <!--
 
@@ -128,7 +132,9 @@ I can probably spend a whole day discussing this alone, but let's just say that 
 
 # Rant (again)
 
-- System thinking books just speak about feedback loops and...
+System thinking is about:
+
+- Feedback loops
 - System patterns \ observations??
 
 <!--
@@ -142,10 +148,10 @@ Again, very useful stuff, but not practical, not positive actions.
 
 # Why is architecture hard?
 
-- By definition hard to change :) 
-- Difficult to visualise all important aspects
-- Difficult to KNOW which aspects are important
-- Feedback loops on architecture are slow too
+- Hard to change :) 
+- Difficult to visualise everything
+- Difficult to know which aspects are important
+- Feedback loops on architecture can be really slow
 
 <!-- 
 My opinion: A huge contributing factor to the above is that software engineering arose as a means to automate other stuff and not as an engineering principle in its own right. There was a push towards more and more software as the value of automation became more and more evident, with little to no time to do any scientific research behind it. Even to this day it's a half-baked field of engineering, with a lot of people claiming you can't be a software _engineer_, and I can't fault them (even if I disagree) because research has still not caught up
@@ -200,8 +206,8 @@ I hope it will help at the end
 
 # Basic premise
 
-- Coupling and complexity are adequate and enough to evaluate an architecture
-- BUT: It is only enough if we consider these at all "levels", subsystems, and connected systems 
+- Coupling and complexity are adequate and enough
+- Given we consider these at all subsystems and systems 
 
 ---
 
@@ -224,11 +230,14 @@ Similarly, I don't believe what I have here is perfect, but I hope it's useful. 
 # Coupling:
 
 - (Re-)Defined as an abstract measure of "togetherness" of two or more "things"
-- There are different types of coupling
-- Teams and companies may be coupled too!
-- VERY important: we have lots of control on coupling
+- Teams, companies, processes may be coupled too!
 
 <!-- 
+NOTE:
+- There are different types of coupling
+- VERY important: we have lots of control on coupling
+
+
 - Put differently: A is coupled to B, if A influences B. The reverse may not be true.
 - We can control it quite a lot. Not it's existence, but whether it affects onw system and not the other. For example we can't control that A will be coupled to B, but we can control the direction. We can also control whether they are not directly coupled, but indirectly coupled to a more stable thing
 -->
@@ -238,9 +247,10 @@ Similarly, I don't believe what I have here is perfect, but I hope it's useful. 
 # Complexity
 
 - (Re-)Defined as an abstract measure of how easy it is to understand, use, and\or think about some part of a system or process
-- _Generally_ speaking we can manage it using encapsulation and information hiding
 
 <!--
+- _Generally_ speaking we can manage it using encapsulation and information hiding
+
 - We can control some of it, but there is inherent complexity
 -->
 
@@ -249,13 +259,17 @@ Similarly, I don't believe what I have here is perfect, but I hope it's useful. 
 ### Interlude: Are coupling and complexity dependant variables?
 
 - No... to an adequate degree
-- A very tightly coupled system may be easy to understand
-- A highly uncoupled system can be very difficult to understand
-- ...and anything in between
 
-(but they are not entirely independent) 
+| | |
+|---|---|
+| A very tightly coupled system may be easy to understand | A highly uncoupled system can be very difficult to understand|
+
+
 
 <!--
+
+NOTE: they are not entirely independent! However, the relationship is such that allows use of automatic control theory
+
 Actually, forcefully lowering coupling can enforce a minimum complexity on a system. It doesn't mean we can calculate complexity from coupling though, so we're safe to continue and assume they're orthogonal for the purposes of the following.
 -->
 
@@ -263,28 +277,35 @@ Actually, forcefully lowering coupling can enforce a minimum complexity on a sys
 
 # Two extremes
 
-- A single method doing everything is one thing, which means there's no coupling, but has insane local complexity
-- "No microservice can have more than 100 loc" - (almost certainly) insane amounts of coupling, high global complexity, super-small local complexity
+
+| | |
+|---|---|
+| A single method doing everything | "No microservice can have more than 100 loc"|
+| | Simple services with low complexity all sharing the same data model |
+
+<!--
+
+ - Single method: no coupling (is one thing)but has insane local complexity
+ - (almost certainly) insane amounts of coupling, high global complexity, super-small local complexity
+-->
 
 ---
 
 # Is there a perfect architecture?
 
-- Not perfect, but I think there's a "best" given a situation
+- Not perfect, but a "best" given a situation
 
 - It's the one which results in the smallest cost to build, maintain and use
 
-(math are incoming)
+
 
 ---
 
 # Mini-rant (again)
 
-(yes, again - I like to get things off my chest)
+In a theoretical world, the best architecture would only require us to think of complexity.
 
-So in theory (and if accept the above), the perfect architecture would only require us to think of complexity
-
-Systems though are living things. They get created, evolve and die.
+Systems, however, are living things. They evolve.
 
 <!--
 
@@ -317,11 +338,14 @@ $$ LCoupC(α) =\sum_{β=β1}^{B} \int_{0}^\infty A × C(αβ) × RoC(β) dt dβ$
 
 # Let's consider the above for a minute
 
+- Generic BC
+- Services coupled to a Core BC
+
+<!--
 - A coupled mess that never changes doesn't have a lifetime cost other than the fixed to build it once
 - Something that is FULLY decoupled has zero cost due to coupling
 - Something that is very coupled will have a high lifetime cost
-- Something that changes frequently will have a high cost
-
+-->
 ---
 
 # Factor 2: Complexity
@@ -343,11 +367,14 @@ The minimum of complexity is inherent complexity + complexity due to coupling \ 
 
 ## Let's consider this a bit
 
+- Complex subsystem \ Supportive BC
+- Core BC
+
+<!--
 - Complexity is only internal to the component
 - Complexity is _far_ less dependent on rate of change of system
 - Coupling is directly proportional to a sum of rate of change
 
-<!--
 I will not postulate that this is more or less important. I just find it interesting
 -->
 
@@ -508,6 +535,21 @@ I call these platform concerns, but they may not be infrastructure related. Thes
 1. In the above steps, we accepted coupling in the direction of data flow.
 1. We can do better
 1. Use commands, events, synchronous and asynchronous communication to control the direction and "hardness" of coupling
+
+---
+
+<!-- _class: lead -->
+# Why the math?
+
+---
+
+| Rule | Why |
+|---|---|
+| Slow changing subsystems | Minimize complexity without affecting coupling cost|
+| Platform concerns | Minimize complexity without affecting coupling cost |
+| Considering all components at all levels | Don't ignore effects of hidden coupling |
+| Grouping around consistency boundaries | Minimize very strong coupling - C(αβ) |
+| Isolate workflows | Minimize complexity - without affecting coupling |
 
 ---
 
