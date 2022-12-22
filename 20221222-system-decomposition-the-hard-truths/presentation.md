@@ -44,9 +44,7 @@ footer: System decomposition: A how to
 
 # Software architecture - a small rant
 
-My problem with info about software architecture:
-
-- No practical guidelines!
+- No _practical_ guidelines!
 - Architectural decisions are hard to change:
 
 
@@ -58,7 +56,9 @@ My problem with info about software architecture:
   - Info about patterns (PoEA)
   - Info on effect of good arch and bad arch, but no info how to get there
   - Some info on what "good arch" looks like, but VEEERY context specific, without defining the context. ARGHH!!
+
 1. I don't teach my children by telling them what NOT to do! I wouldn't have a house by now. Why is architecture like that now?? I don't want to bankrupt a few companies before I learn!!
+
 1. Above combine with the fact that arch decisions are hard to change to create a nightmare scenario.
 
 -->
@@ -76,14 +76,15 @@ My problem with info about software architecture:
 ---
 # The reductionist view of architecture
 
-Architecture is about:
-
 - Coupling *
 - Complexity
 
 *: Multiple types and it includes teams, SME's, processes, external systems etc.
 
 <!--
+
+It took me years to get here
+
 I spostulate that all other factors and effects are an outcome of these two things applying at different levels and parts of the system.
 
 I'd love to hear challenges to this, as this is my basic premise.
@@ -105,7 +106,13 @@ Feedback loops are how systems interact. Systems on all levels simultaneously.
 
 ---
 
+<!-- _class: lead -->
 # What system are you talking about???
+
+## _EVERYTHING_
+
+(code, functions, services, subsystems, users, developers, business, economy, _everything_)
+<!--
 
 - Classes \ Functions \ components
 - Services
@@ -115,7 +122,6 @@ Feedback loops are how systems interact. Systems on all levels simultaneously.
 - Developers
 - Business people and SME's
 - And competitors!
-<!--
 
 A small side-note: Feedback loops really define the behaviour of a system.
 
@@ -135,9 +141,7 @@ I can probably spend a whole day discussing this alone, but let's just say that 
 
 ---
 
-# Rant (again)
-
-System thinking is about:
+# Systems thinking
 
 - Feedback loops
 - System patterns \ observations??
@@ -148,7 +152,6 @@ ARGH!
 Again, very useful stuff, but not practical, not positive actions.
 
 -->
-
 ---
 
 # Why is architecture hard?
@@ -240,6 +243,16 @@ Similarly, I don't believe what I have here is perfect, but I hope it's useful. 
 
 ---
 
+# Useful scientific theory exists!
+
+- Control Theory \ Feedback controlled systems
+
+<!-- 
+Control theory is certainly related to what I do here. However, to tie things up is a lot of work. I mention it as it may make some things clearer in case you are aware of this, and I am more than happy to get contributions from people if this sparks something.
+-->
+
+---
+
 # Coupling:
 
 - (Re-)Defined as an abstract measure of "togetherness" of two or more "things"
@@ -288,7 +301,7 @@ Actually, forcefully lowering coupling can enforce a minimum complexity on a sys
 
 ---
 
-# Two extremes
+# Extreme examples
 
 
 | | |
@@ -316,11 +329,10 @@ Actually, forcefully lowering coupling can enforce a minimum complexity on a sys
 
 # Mini-rant (again)
 
-In a theoretical world, the best architecture would only require us to think of complexity.
-
-Systems, however, are living things. They evolve.
+Systems are living things. They get born, evolve and die.
 
 <!--
+In a theoretical world, the best architecture would only require us to think of complexity.
 
 with the effort being a linear relationship to the size of the system (which would be a _relatively_ fixed cost on top of any complexity to understand)
 
