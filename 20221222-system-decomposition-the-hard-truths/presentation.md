@@ -343,7 +343,7 @@ with the effort being a linear relationship to the size of the system (which wou
 
 # Factor 1: Coupling
 
-$$ LCoupC(α) =\sum_{β=β1}^{B} \int_{0}^\infty A × C(αβ) × RoC(β) dt dβ$$
+$$ LCoupC(α) =\sum_{β=β1}^{B} \int_{0}^\infty A × C(αβ) × RoC(β) dt$$
 
 - LCoupC(α): Lifetime Coupling Cost of component α
 - B: the set of all compoenents α is coupled to
@@ -418,6 +418,14 @@ $$ TCoA =\sum_{α=α1}^{Α} ( LCoupC(α) + LComplC(α))$$
 <!-- 
   VERY important to note that this applies to all levels
 -->
+
+---
+
+# The best architecture?
+
+The one that minimizes TCoA across the lifetime of the application (not just temporarilly)
+
+Mathematically speaking we need to solve $d(TCoA)/dt = 0$ and find the global minimum
 
 ---
 
