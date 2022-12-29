@@ -343,14 +343,12 @@ with the effort being a linear relationship to the size of the system (which wou
 
 # Factor 1: Coupling
 
-$$ LCoupC(α) =\sum_{β=β1}^{B} \int_{0}^\infty A × C(αβ) × RoC(β) dt$$
+$$ LCoupC(α) =\sum_{β=β1}^{B} \int_{0}^\infty A × C(αβ, t) × RoC(β, t) dt$$
 
 - LCoupC(α): Lifetime Coupling Cost of component α
 - B: the set of all compoenents α is coupled to
-- LCoupC(α): lifetime couping cost of α
-- C(αβ): Coupling of component α to component β (directional)
-- RoC(β): Rate of change of component β
-- C(αβ) ∝ t (time) and RoC(β) ∝ t (time)
+- C(αβ, t): Coupling of component α to component β (directional)
+- RoC(β, t): Rate of change of component β
 
 <!--
 - A is the cost to make code changes to component α
@@ -375,13 +373,11 @@ $$ LCoupC(α) =\sum_{β=β1}^{B} \int_{0}^\infty A × C(αβ) × RoC(β) dt$$
 
 # Factor 2: Complexity
 
-$$ LComplC(α) = \int_{0}^\infty C × Compl(α) × RoC(α) dt$$
+$$ LComplC(α) = \int_{0}^\infty C × Compl(α, t) × RoC(α, t) dt$$
 
 - LComplC(α): Lifetime Complexity Cost of component α
-- Compl(α): Complexity of component α
-- Compl(α) ∝ t (time), with a minimum
-- RoC(α): Rate of change of component α
-- RoC(α) ∝ t (time)
+- Compl(α, t): Complexity of component α
+- RoC(α, t): Rate of change of component α
 
 <!--
 
