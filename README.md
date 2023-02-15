@@ -15,6 +15,7 @@
 - DDD EU Open Space, 24-25 June 2021: [Ignore metadata on your own peril](https://skleanthous.github.io/presentations/20210623-message-metadata/presentation.html)
 - Naked Wines, 4th October 2021: [Event storming workshop intro](https://skleanthous.github.io/presentations/20211004-es-workshop-intro/presentation.html)
 - DDD Athens, 22nd December 2022: [System Decomposition: The hard truths](https://skleanthous.github.io/presentations/20221222-system-decomposition-the-hard-truths/presentation.html)
+- PVR, 15 February 2023: [Design-level Event Storming](https://skleanthous.github.io/presentations/20230215-event-storming-design/presentation.html)
 
 ## How to build them
 
