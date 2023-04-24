@@ -9,7 +9,7 @@
     "markdown-it-plantuml": "^1.4.1"
   },
   "devDependencies": {
-    "@marp-team/marp-cli": "^0.21.1",
+    "@marp-team/marp-cli": "^2.5.0",
     "markdown-it": "^12.3.2"
   },
   "scripts": {
